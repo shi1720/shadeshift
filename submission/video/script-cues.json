@@ -1,0 +1,16 @@
+[
+  {"scene":"Opening title","text":"The ticket gets you a seat. It does not get you shade. For event visitors, the outdoor walk and queue are part of the experience."},
+  {"scene":"Houston studio and budget","text":"For the venue operator, they are also a budget decision. Where should limited preparation money go? ShadeShift turns that question into a plan you can explain."},
+  {"scene":"Historical heat map","text":"Houston is our detailed case. The map includes six candidate connectors and six hundred fifty-four historical air-temperature observations from August seventh, twenty twenty."},
+  {"scene":"Evidence and method","text":"The observations are dated evidence. Visitor counts, waiting times, existing shade, costs and intervention effects are visible assumptions that an operator can replace with measurements."},
+  {"scene":"Starting plan","text":"Here, the available budget is seventy-five thousand dollars. The starting plan spends seventy thousand and estimates a twenty-three point eight percent reduction in direct-sun exposure."},
+  {"scene":"Click Optimize investment","text":"Now we optimize. The exact search compares feasible combinations within this small catalog. At the same spend, the modeled reduction rises to thirty-one point two five percent."},
+  {"scene":"Results and baseline comparison","text":"That is one hundred twenty-seven thousand, nine hundred two person-minutes avoided per modeled arrival window. It is an exposure accounting result, not a prediction of illnesses prevented."},
+  {"scene":"Refill and community tradeoff","text":"The tradeoff matters. Refill capacity falls from twelve hundred to zero, and community-weighted investment falls. The operator can reject that allocation or change the plan."},
+  {"scene":"Effectiveness sensitivity","text":"At sixty percent delivered effectiveness, the same portfolio reduces modeled exposure by eighteen point seven five percent. These are assumption scenarios, not statistical confidence intervals."},
+  {"scene":"Host city atlas","text":"The host-city atlas compares a consistent historical weather sample across all eleven U.S. host locations. It provides seasonal context, not a forecast or a ranking of readiness."},
+  {"scene":"Sign-in, save, export","text":"Users can explore without signing in. Email and password authentication supports private saved plans. JSON and CSV exports preserve a reviewable record of the scenario."},
+  {"scene":"Legacy and delivery","text":"Legacy uses separate resident demand and reuse days. A two-event pilot would check sites, replace assumptions, measure planning time and give reusable assets an owner."},
+  {"scene":"Business slide","text":"Our first buyer hypothesis is venue operations. We would test a five-thousand-dollar pilot, then a six-thousand-dollar annual venue subscription. Equipment and installation are separate."},
+  {"scene":"Closing URL","text":"We are looking for one venue partner and two events. ShadeShift helps turn heat context into a funded shade plan, with assumptions that everyone can inspect."}
+]

@@ -36,6 +36,8 @@ In the illustrative Houston case, a **$70,000** starting portfolio models **23.8
 
 With a $75,000 cap and a 25% community-weighted minimum, the exposure-maximizing portfolio also spends **$70,000** and models **31.3% less exposure**. Its community allocation is **27.4%**, but refill capacity becomes **zero**. That is a decision to examine, not a benefit to hide: a single exposure objective does not satisfy every operating need. At 60% delivered effectiveness, the same optimized plan models an **18.8% reduction**.
 
+Both portfolios require $70,000 initially. Across 12 event windows, their modeled first-year allowances are $171,200 and $251,400, respectively. The optimizer constrains first deployment, so recurring operating cost remains a separate decision.
+
 The atlas reveals a second tradeoff. In the sampled 2025 afternoons, Houston has the highest median heat index, **97.8°F**, while Philadelphia has the highest 95th percentile, **107.8°F**. Typical conditions and hot-tail afternoons tell different stories. These are historical model comparisons, not city-readiness rankings or forecasts.
 
 All intervention benefits are scenario estimates. No venue deployment, medical outcome, customer adoption or revenue is claimed.

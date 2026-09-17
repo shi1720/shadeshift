@@ -1032,20 +1032,37 @@ export default function Workbench({
                   </div>
                   <div className="compare-grid">
                     {[
-                      { label: "Pinned plan", data: evaluate(compare) },
-                      { label: "Current plan", data: r },
+                      {
+                        label: "Pinned plan",
+                        data: evaluate(compare),
+                        eventDays: compare.eventDays,
+                      },
+                      {
+                        label: "Current plan",
+                        data: r,
+                        eventDays: s.eventDays,
+                      },
                     ].map((p) => (
                       <div key={p.label}>
                         <span>{p.label}</span>
                         <b>{p.data.reduction.toFixed(1)}% exposure avoided</b>
                         <p>
-                          {money(p.data.cost)} investment ·{" "}
+                          {money(p.data.cost)} initial investment ·{" "}
                           {p.data.residentPercent.toFixed(0)}% community
                           allocation
+                        </p>
+                        <p>
+                          {money(p.data.annualCost)} first-year allowance ·{" "}
+                          {p.eventDays} event windows
                         </p>
                       </div>
                     ))}
                   </div>
+                  <p className="table-note">
+                    Optimization constrains initial investment. Repeated
+                    staffing, refills and maintenance can change which plan fits
+                    an annual budget.
+                  </p>
                 </section>
               )}
               <section className="panel sensitivity">

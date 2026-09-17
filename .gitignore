@@ -56,3 +56,5 @@ next-env.d.ts
 /submission/video/*.webm
 /submission/video/*.aiff
 /submission/video/*.wav
+
+/submission/ShadeShift-Submission.zip
