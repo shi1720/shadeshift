@@ -1,4 +1,4 @@
-# ShadeShift research memo — verified 18 September 2026
+# ShadeShift research memo :  verified 18 September 2026
 
 ## Contest facts and unresolved eligibility
 
@@ -14,19 +14,19 @@ https://github.com/HoustonSI/WorldCupUSSpatialData101 is a curated source catalo
 
 ## Real Houston data delivered
 
-1. /tmp/houston-historical-heat.geojson — cleaned 654 measured mobile-sensor air temperature observations around NRG, August7 2020 afternoon15:00–16:00 America/Chicago. Raw source /tmp/d8dd6004e1ab4dccbfb36a5992f480bc-data.geojson. Metadata /tmp/houston-heat-provenance.json. Bounding query WGS84 [-95.431,29.667,-95.390,29.704]. Sample min93.20°F,max96.62°F, mean94.70°F. Samples are not uniformly distributed; mean NOT an area-wide statistic. Actual samples only cover longitude[-95.412453,-95.390047],latitude[29.685210,29.703983]; no southern/interior stadium extrapolation. Geometry from source reprojected by ArcGIS to EPSG4326. Cleaned file preserves exact coordinates, temps and local timestamps.
+1. /tmp/houston-historical-heat.geojson :  cleaned 654 measured mobile-sensor air temperature observations around NRG, August7 2020 afternoon15:00–16:00 America/Chicago. Raw source /tmp/d8dd6004e1ab4dccbfb36a5992f480bc-data.geojson. Metadata /tmp/houston-heat-provenance.json. Bounding query WGS84 [-95.431,29.667,-95.390,29.704]. Sample min93.20°F,max96.62°F, mean94.70°F. Samples are not uniformly distributed; mean NOT an area-wide statistic. Actual samples only cover longitude[-95.412453,-95.390047],latitude[29.685210,29.703983]; no southern/interior stadium extrapolation. Geometry from source reprojected by ArcGIS to EPSG4326. Cleaned file preserves exact coordinates, temps and local timestamps.
    Source item https://www.arcgis.com/home/item.html?id=d8dd6004e1ab4dccbfb36a5992f480bc
    Data https://services2.arcgis.com/LYMgRMwHfrWWEg3s/arcgis/rest/services/Heat_Watch_CAPA_Houston_Harris_Temp_Traverse_Points_AF_2020/FeatureServer/0
    Attribution CAPA Strategies, Houston Advanced Research Center, Houston Harris Heat Action Team. ArcGIS licenseInfo is 'None'; H3AT project explicitly says its mapping data are free for everyone to use. Preserve attribution and source's informational-use disclaimer. Not live heat, not land surface temperature, not pedestrian sensor validation, not shade fractions. Best UI optional dated point observation layer, distinct from scenario connectors.
 
-2. /tmp/houston-data.json — cleaned official GTFS stop subset with provenance; raw /tmp/metro-gtfs.zip. Publisher HarrisCounty METRO. Feed versionAugust2026IVOMS_20260828, feed dates20260830–20270123. URL https://metro.resourcespace.com/pages/download.php?ref=4835&ext=zip. Official developer site https://api-portal.ridemetro.org/ links to static downloads. License https://www.ridemetro.org/about/news-media allows reproduction/redistribution and commercial display of transit data subject to terms; do not use logos or imply endorsement. GTFS does not include live arrivals here. Coordinates [lon,lat]:
+2. /tmp/houston-data.json :  cleaned official GTFS stop subset with provenance; raw /tmp/metro-gtfs.zip. Publisher HarrisCounty METRO. Feed versionAugust2026IVOMS_20260828, feed dates20260830–20270123. URL https://metro.resourcespace.com/pages/download.php?ref=4835&ext=zip. Official developer site https://api-portal.ridemetro.org/ links to static downloads. License https://www.ridemetro.org/about/news-media allows reproduction/redistribution and commercial display of transit data subject to terms; do not use logos or imply endorsement. GTFS does not include live arrivals here. Coordinates [lon,lat]:
    - Houston Stadium NB25003 [-95.403341,29.685929], description STADIUM PARK / ASTRODOME NB.
    - Houston Stadium SB25004 [-95.403411,29.685928].
    - Smith Lands NB25005 [-95.404798,29.696470], SB25006[-95.404859,29.696464].
    - Fannin South NB25001[-95.402806,29.673589], SB25002[-95.402862,29.673584].
    - Bus stops adjacent included. GTFS wheelchair_boarding0 means no information, NOT inaccessible. Data are current Sept2026 stop coordinates, not WorldCup special-event operations.
 
-3. /tmp/houston-heat-catalog.json — public ArcGIS metadata listing H3AT2020/2024 datasets, canopy data. 2024 NRG bounding box yields ZERO samples and no neighborhood polygons. Do not silently label2024 city results as NRG measurements.
+3. /tmp/houston-heat-catalog.json :  public ArcGIS metadata listing H3AT2020/2024 datasets, canopy data. 2024 NRG bounding box yields ZERO samples and no neighborhood polygons. Do not silently label2024 city results as NRG measurements.
 
 ## Strong contextual evidence
 

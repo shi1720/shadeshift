@@ -2207,3 +2207,4 @@ footer button {
 .detail-body > label.slider-label {
   margin-top: 24px;
 }
+.auth-modal form{display:grid;gap:18px}.auth-modal form .primary{margin-top:0}.auth-error{font-size:13px!important;margin:0!important;padding:12px;border-radius:6px;background:#fff1df;color:#965b28!important}.auth-options{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;margin:20px 0}.auth-options button{font-size:12px}.auth-privacy{display:block;color:var(--muted);font-size:11px;line-height:1.6}

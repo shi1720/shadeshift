@@ -1,10 +1,8 @@
 import {
   ExternalLink,
   Download,
-  CheckCircle2,
   Info,
   Database,
-  MapPin,
   SlidersHorizontal,
   Calculator,
 } from "lucide-react";

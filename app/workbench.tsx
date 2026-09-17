@@ -18,17 +18,11 @@ import {
   Plus,
   Trash2,
   Upload,
-  ExternalLink,
   RotateCcw,
-  BarChart3,
   Droplets,
-  Clock,
   Menu,
   X,
   BookOpen,
-  Target,
-  CheckCircle2,
-  TrendingDown,
   Wallet,
   Save,
 } from "lucide-react";
@@ -51,18 +45,19 @@ import {
   packages,
   Scenario,
   PackageId,
-  corridors,
   getCorridors,
   sensitivity,
   toCsv,
   MODEL_VERSION,
-  heatIndex,
   snapshot,
 } from "../lib/model";
 import { scenarioSchema } from "../lib/validation";
 import CorridorMap from "./corridor-map";
 import CityAtlas from "./city-atlas";
 import Evidence from "./evidence";
+import AuthDialog from "./auth-dialog";
+import { auth, listPlans, persistPlan, deletePlan } from "../lib/firebase";
+import { signOut } from "firebase/auth";
 const money = (n: number) =>
   new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -97,7 +92,7 @@ function download(name: string, content: string, type: string) {
 export default function Workbench({
   user,
 }: {
-  user: { displayName: string; email: string } | null;
+  user: { displayName: string; email: string; uid: string } | null;
 }) {
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => setHydrated(true), []);
@@ -114,40 +109,22 @@ export default function Workbench({
     [compare, setCompare] = useState<Scenario | null>(null),
     [saveDialog, setSaveDialog] = useState(false),
     [guide, setGuide] = useState(false);
+  const [authDialog, setAuthDialog] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
   function signIn() {
-    try {
-      sessionStorage.setItem(
-        "shadeshift-auth-draft",
-        JSON.stringify({ scenario: s, createdAt: Date.now() }),
-      );
-    } catch {
-      setNotice("Could not preserve the draft. Export JSON before signing in.");
-      return;
-    }
-    window.location.assign("/signin-with-chatgpt?return_to=%2F");
+    setAuthDialog(true);
   }
-  useEffect(() => {
-    if (!user) return;
-    const draft = sessionStorage.getItem("shadeshift-auth-draft");
-    if (!draft) return;
+  const closeAuth = useCallback(() => setAuthDialog(false), []);
+  async function logout() {
     try {
-      const raw = JSON.parse(draft);
-      if (Date.now() - raw.createdAt < 3600000) {
-        const parsed = scenarioSchema.safeParse(raw.scenario);
-        if (parsed.success) {
-          setS(parsed.data);
-          setSaveDialog(true);
-          setNotice(
-            "Your scenario is restored. Save it to keep it in your account.",
-          );
-        }
-      }
+      await signOut(auth);
+      setSaved([]);
+      setTab("studio");
+      setNotice("Signed out. Your saved plans remain private.");
     } catch {
-    } finally {
-      sessionStorage.removeItem("shadeshift-auth-draft");
+      setNotice("Could not sign out. Please try again.");
     }
-  }, [user]);
+  }
   useEffect(() => {
     if (!saveDialog && !guide) return;
     const prior = document.activeElement as HTMLElement;
@@ -225,10 +202,7 @@ export default function Workbench({
     setBusy(true);
     setSavedError("");
     try {
-      const res = await fetch("/api/plans");
-      const body = (await res.json()) as { error?: string; plans: Saved[] };
-      if (!res.ok) throw Error(body.error);
-      setSaved(body.plans);
+      setSaved(await listPlans());
     } catch (e) {
       setSavedError(e instanceof Error ? e.message : "Could not load plans.");
     } finally {
@@ -238,13 +212,7 @@ export default function Workbench({
   async function savePlan() {
     setBusy(true);
     try {
-      const res = await fetch("/api/plans", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(s),
-      });
-      const body = (await res.json()) as { error?: string; plans: Saved[] };
-      if (!res.ok) throw Error(body.error);
+      await persistPlan(s);
       setSaveDialog(false);
       setNotice("Plan saved to your account. Find it in Saved plans.");
     } catch (e) {
@@ -256,11 +224,7 @@ export default function Workbench({
   async function removePlan(id: string) {
     setBusy(true);
     try {
-      const res = await fetch(`/api/plans?id=${encodeURIComponent(id)}`, {
-        method: "DELETE",
-      });
-      const body = (await res.json()) as { error?: string; plans: Saved[] };
-      if (!res.ok) throw Error(body.error);
+      await deletePlan(id);
       setSaved((prev) => prev.filter((p) => p.id !== id));
       setNotice("Plan deleted.");
     } catch (e) {
@@ -364,10 +328,10 @@ export default function Workbench({
                 {user.displayName.slice(0, 1).toUpperCase()}
                 <span title={user.displayName}>{user.displayName}</span>
               </div>
-              <a href="/signout-with-chatgpt?return_to=%2F" target="_top">
+              <button className="sidebar-signin" onClick={logout}>
                 <LogOut size={14} />
                 Sign out
-              </a>
+              </button>
             </>
           ) : (
             <button className="sidebar-signin" onClick={signIn}>
@@ -1041,7 +1005,7 @@ export default function Workbench({
                           <td>{money(c.cost)}</td>
                           <td>{num(c.saved / 60)}</td>
                           <td>
-                            {c.saved ? money(c.cost / (c.saved / 60)) : "—"}
+                            {c.saved ? money(c.cost / (c.saved / 60)) : "n/a"}
                           </td>
                         </tr>
                       ))}
@@ -1382,17 +1346,17 @@ export default function Workbench({
                   <FolderOpen size={40} />
                   <h2>Your plans, available across sessions.</h2>
                   <p>
-                    Explore every scenario without an account. Sign in with
-                    ChatGPT to save plans privately.
+                    Explore every scenario without an account. Sign in with your
+                    email to save plans privately.
                   </p>
                   <button className="primary" onClick={signIn}>
-                    Sign in with ChatGPT <ArrowUpRight size={16} />
+                    Sign in to your account <ArrowUpRight size={16} />
                   </button>
                 </section>
               ) : (
                 <>
                   <div className="plan-toolbar">
-                    <span>{saved.length} / 50 saved plans</span>
+                    <span>{saved.length} recent saved plans</span>
                     <div className="button-row">
                       <button
                         className="secondary"
@@ -1510,6 +1474,16 @@ export default function Workbench({
         hidden
         onChange={(e) => importPlan(e.target.files?.[0])}
       />
+      {authDialog && (
+        <AuthDialog
+          onClose={closeAuth}
+          onSuccess={() => {
+            setAuthDialog(false);
+            setSaveDialog(true);
+            setNotice("Signed in. Your scenario is ready to save.");
+          }}
+        />
+      )}
       {saveDialog && (
         <div className="modal-backdrop" onClick={() => setSaveDialog(false)}>
           <section

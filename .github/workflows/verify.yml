@@ -13,9 +13,22 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run lint
       - run: npm run typecheck
       - run: npm test
       - run: npm run data:verify
       - run: npm run data:rebuild
       - run: git diff --exit-code -- public/data/host-climate-2025.json public/data/host-venues.json
       - run: npm run build
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm run test:rules
+      - run: npx playwright install --with-deps chromium
+      - name: Browser and Firebase integration checks
+        run: |
+          VITE_USE_FIREBASE_EMULATORS=true npm run dev -- --host 127.0.0.1 > /tmp/shadeshift-vite.log 2>&1 &
+          trap 'kill $!' EXIT
+          for attempt in $(seq 1 40); do curl -fsS http://127.0.0.1:5173/ >/dev/null && break || sleep 1; done
+          FIREBASE_E2E_EMULATORS=true npx firebase emulators:exec --only auth,firestore --project demo-shadeshift "npm run test:e2e"

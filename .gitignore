@@ -48,3 +48,11 @@ next-env.d.ts
 /playwright-report/
 *.tsbuildinfo
 /tmp/
+
+/.firebase/
+*-debug.log
+/Shivam_Gupta_Resume.pdf
+/submission/video/*.mp4
+/submission/video/*.webm
+/submission/video/*.aiff
+/submission/video/*.wav

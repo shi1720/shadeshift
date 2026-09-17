@@ -1,4 +1,4 @@
-# ShadeShift — commercial strategy and submission narrative
+# ShadeShift :  commercial strategy and submission narrative
 
 Working tagline: **Turn a heat map into a funded shade plan.**
 
@@ -90,7 +90,7 @@ Pilot delivery estimate: 18 analyst hours × $60 = $1,080; 12 implementation/sup
 - **Distribution:** event-production and venue-management partners can bring recurring portfolios. Transit or resilience grants may fund public-benefit pilots, but grant dependence is not the core revenue model.
 - **Production gate:** authenticated tenancy and role permissions, durable storage and backups, audit trail, data retention/deletion, accessibility review, penetration/security testing, operational monitoring, service terms, source licensing, and a support/incident process need verification before commercial operations. A working login alone is not production readiness.
 
-## Anonymous Devpost narrative — ready to adapt to the final implemented build
+## Anonymous Devpost narrative :  ready to adapt to the final implemented build
 
 ### Project name
 ShadeShift
@@ -192,7 +192,7 @@ Recording guidance: use 1920×1080 or 1440×900, browser zoom 100%, hide persona
 5. **Show the tradeoffs.** A second scenario and sensitivity view, separate water measure, plus what remains uncertain.
 6. **A business with a testable buyer.** $5,000 pilot / $6,000 annual hypotheses; what must be measured; comparison to established GIS/weather/incident workflows.
 7. **The asset stays useful after the event.** Reuse owner, destination and assumed use schedule; 90-day pilot path and field validation.
-8. **A plan worth checking—and acting on.** Demo URL, source link/QR, explicit ask: one venue partner for two events. No implied committed partner.
+8. **A plan worth checking: and acting on.** Demo URL, source link/QR, explicit ask: one venue partner for two events. No implied committed partner.
 
 ## Judge Q&A
 

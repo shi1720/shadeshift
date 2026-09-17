@@ -1,29 +1,39 @@
 # Security and operational boundaries
 
-## Identity and ownership
+## Authentication and ownership
 
-Sites dispatch initiates ChatGPT authentication and supplies authenticated user headers. The app trusts those headers only behind that dispatcher. A publicly accessible direct Worker with forgeable headers would be an unsafe deployment. Do not reuse the Worker on another host without replacing the trust boundary.
+The deployed application is a static Vite/React build on Firebase Hosting. Email/password account creation, sign-in, password reset and sign-out use Firebase Authentication. The interface does not require an account for public exploration, calculations or exports.
 
-Every saved-plan GET/POST/DELETE checks identity on the server. Queries use prepared bindings and owner filters. The browser never supplies an owner ID. All plan responses use Cache-Control: no-store. Mutations require an exact same-origin Origin header. D1 stores an immutable scenario snapshot, not credentials.
+Saved documents live at `users/{uid}/plans/{uuid}`. Firestore rules require a signed-in, non-anonymous identity whose UID matches that path. Owners can create, read, list and delete their versions; updates are denied. A changed plan is saved as a new document. Other paths are denied by default. There is no custom cookie-authenticated saved-plan endpoint or trusted identity-header proxy.
 
-Local Vite sign-in is a development convenience only, guarded by localhost/loopback checks. It strips incoming authenticated-user headers. It is not a production authentication implementation.
+The Firebase web configuration is delivered to the browser and is not an administrative secret. Authentication tokens and deployed Firestore rules establish user access. Administrative SDKs bypass these rules, so project IAM and service-account credentials require separate protection. Never put administrative credentials in source or browser assets.
 
-## Input and output
+## Validation and saved records
 
-Strict Zod validation bounds numbers, keys and string length, rejects non-finite inputs, and requires positive demand weight when attendance is positive. JSON requests have a 20 KB body-size check. CSV escapes quotes and neutralizes leading spreadsheet-formula text. React escapes displayed names. SQL never interpolates scenario values.
+The database rules enforce allowed envelope fields, supported model version, UUID shape, name/type/length constraints, a bounded snapshot string and server timestamps. The snapshot JSON is opaque to Firestore rules: they cannot validate its internal scenario or certify that its results are correct. The application parses the snapshot and validates inputs with Zod before use. Calculations use validated scenario inputs rather than trusting uploaded result fields.
 
-A transient sessionStorage draft preserves a customized scenario through a top-level authentication redirect and expires after one hour. Saved plans use D1. The draft is removed after restoration. Plan downloads remain under the user's control.
+Snapshot strings are bounded at 20,000 characters by the rules. The client also checks length. This is not a universal 20 KB byte guarantee. Owners who bypass the interface can store malformed but size-compliant JSON in their own namespace; one invalid document can currently cause their saved-plan listing to fail. It does not grant access to another account. See the precise contract in [Firebase data security](FIREBASE-SECURITY.md).
 
-## Verification scope
+CSV exports quote fields and neutralize leading spreadsheet formulas. React escapes displayed strings. JSON import rejects incompatible explicit model versions, and saved plans with incompatible versions cannot be opened as the current model. Exports retain resolved assumptions, catalog, model version and results for inspection.
 
-Local automated checks cover anonymous API rejection, invalid inputs, cross-origin writes, oversized bodies, save/reload/delete and keyboard workflows. They do not prove the platform's identity-header stripping or cross-account isolation. Hosted auth boundary checks must be recorded separately after deployment.
+The interface lists the latest 50 saved plans. This is a query limit, **not an enforced per-account storage quota**. Rules do not limit document count or creation rate. Saved versions are not a tamper-proof audit log: an owner can delete a document and create a new one under the same ID.
+
+## Browser and hosting behavior
+
+Sign-in occurs in an in-page dialog; the current scenario remains in React state. The app does not store passwords in plan documents or implement its own password database. Firebase manages authentication/session persistence. Unsaved scenarios are not guaranteed to survive refresh or tab closure; save or export first.
+
+Hosting configuration sets `X-Content-Type-Options`, a restrictive camera/microphone/geolocation Permissions Policy, a referrer policy and same-origin framing. These headers are configured in the repository; verify the actual hosted response after deployment. Do not describe them as a full content-security policy or security certification.
+
+Map tiles are third-party requests. Public data contain historical observations and geographic anchors, not identifiable visitor trajectories. Account email and UID are handled by Firebase Authentication; plan documents contain scenarios under their owner's UID. Users can delete individual plans. Firebase account deletion does not automatically delete Firestore documents, and no complete account/data-erasure workflow is currently implemented.
+
+## Local testing
+
+Use the `demo-shadeshift` Firebase emulators for test accounts and stored fixtures. `npm run dev:emulator` selects loopback Auth/Firestore endpoints. Emulator mode is an explicit local setting, not a production authentication shortcut. The production build must not include an enabled emulator flag.
+
+Rules tests use the actual rules file and simulated authenticated contexts. They check ownership, anonymous denial, cross-user access, immutable versions, invalid envelopes, timestamp forgery and closed paths. Browser tests and production checks have different scopes; consult [release verification](RELEASE.md) for executed results. Emulator success is not proof that the intended rules were deployed to the hosted project.
 
 ## Before commercial operations
 
-Add account-level throttling, atomic plan quotas, paginated plans, retention policy, tested D1 backups/restoration, support procedures, operational monitoring and an external security review. Current 50-plan quota uses count-then-insert and can be exceeded by concurrent requests. This is a capacity limitation, not authorization to access another account.
+Verify the deployed Hosting/Auth/Firestore configuration with two accounts and a signed-out browser. Establish monitored quotas, budget alerts, abuse controls, backup/restore procedures, a retention and deletion policy, incident/support ownership and an external security review. Consider App Check, an email-verification requirement and stronger password policy according to the operator's needs. These are not currently asserted as enforced.
 
-The endpoint reads the body before applying its 20 KB check; platform request limits remain relevant. Data storage errors preserve the current client scenario and provide an export fallback. No credentials belong in source, examples, browser storage or logs.
-
-## Privacy
-
-The public application uses no individual mobility traces. Stored plans are private to the signed-in platform identity. Email/display name is shown from the authentication context; it is not copied into the plan table. Users may delete their saved plans. Infrastructure providers may retain their own operational logs under their policies.
+The current browser signup form requires eight password characters; that UI check alone is not proof of the Firebase project's server password policy. No rate-limit, availability, penetration-test or production security certification claim is made.

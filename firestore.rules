@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isOwner(uid) {
+      // Anonymous Firebase accounts have a UID too; they must not gain persistence.
+      return request.auth != null
+        && request.auth.uid == uid
+        && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function validNewPlan(planId) {
+      let data = request.resource.data;
+      let fields = ['name', 'modelVersion', 'snapshotJson', 'createdAt', 'updatedAt'];
+      return planId.matches('[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}')
+        && data.keys().hasAll(fields)
+        && data.keys().hasOnly(fields)
+        && data.name is string
+        && data.name.size() > 0
+        && data.name.size() <= 100
+        && data.name.matches('.*[^\\s].*')
+        && data.modelVersion == '1.0.0'
+        && data.snapshotJson is string
+        && data.snapshotJson.size() > 0
+        && data.snapshotJson.size() <= 20000
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        // serverTimestamp() resolves to request.time during rule evaluation.
+        && data.createdAt == request.time
+        && data.updatedAt == request.time;
+    }
+
+    match /users/{uid}/plans/{planId} {
+      allow get, list, delete: if isOwner(uid);
+      allow create: if isOwner(uid) && validNewPlan(planId);
+      // Every saved version is immutable; editing means saving a new document.
+      allow update: if false;
+    }
+
+    // No profiles, public plans, nested resources, or collection-group access.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

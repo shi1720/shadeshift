@@ -21,7 +21,7 @@ assert.equal(weather.cities.length, 11);
 assert.equal(new Set(weather.cities.map((c: { id: string }) => c.id)).size, 11);
 for (const c of weather.cities) {
   assert.equal(c.afternoons.length, 49);
-  let values: number[] = [];
+  const values: number[] = [];
   for (const row of c.afternoons) {
     assert.ok(row.localTime.endsWith("T15:00"));
     const hi = heatIndex((row.temperatureC * 9) / 5 + 32, row.relativeHumidity);

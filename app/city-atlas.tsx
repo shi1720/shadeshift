@@ -10,11 +10,9 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ReferenceLine,
 } from "recharts";
 import data from "../public/data/host-climate-2025.json";
 import type * as Leaflet from "leaflet";
-type City = (typeof data.cities)[number];
 function AtlasMap({
   selected,
   onSelect,
