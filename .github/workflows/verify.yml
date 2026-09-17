@@ -1,0 +1,21 @@
+name: Verify ShadeShift
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run data:verify
+      - run: npm run data:rebuild
+      - run: git diff --exit-code -- public/data/host-climate-2025.json public/data/host-venues.json
+      - run: npm run build

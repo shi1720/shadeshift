@@ -1,0 +1,3495 @@
+{
+  "metadata": {
+    "title": "2025 early-summer afternoon heat screening at 11 US host venues",
+    "retrievedAt": "2026-09-18",
+    "startDate": "2025-06-01",
+    "endDate": "2025-07-19",
+    "timeOfDay": "15:00 local venue time",
+    "sampleCountPerVenue": 49,
+    "weatherSource": "Open-Meteo Historical Weather API / ERA5 (ECMWF Copernicus)",
+    "weatherSourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+    "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=33.75555556%2C42.091%2C32.74777778%2C29.68472222%2C39.04888889%2C33.953%2C25.95805556%2C40.81352778%2C39.90083333%2C37.403%2C47.5952&longitude=-84.4%2C-71.264%2C-97.09277778%2C-95.41083333%2C-94.48388889%2C-118.339%2C-80.23888889%2C-74.07436111%2C-75.1675%2C-121.97%2C-122.3316&start_date=2025-06-01&end_date=2025-07-19&hourly=temperature_2m%2Crelative_humidity_2m&timezone=America%2FNew_York%2CAmerica%2FNew_York%2CAmerica%2FChicago%2CAmerica%2FChicago%2CAmerica%2FChicago%2CAmerica%2FLos_Angeles%2CAmerica%2FNew_York%2CAmerica%2FNew_York%2CAmerica%2FNew_York%2CAmerica%2FLos_Angeles%2CAmerica%2FLos_Angeles&models=era5",
+    "weatherModel": "era5",
+    "nominalResolution": "0.25 degrees (~25 km)",
+    "weatherDataLicense": "CC BY 4.0; attribution Open-Meteo, ECMWF ERA5 / Copernicus Climate Change Service",
+    "serviceTerms": "Free API is noncommercial; commercial service needs paid subscription or self-hosting. Snapshot distributed with attribution.",
+    "coordinateSource": "Wikipedia Geosearch/Coordinates API; stadium centroids approximate, independently linked per venue. Official organizer catalog supplies host-to-venue identities, not coordinates.",
+    "hostVenueIdentitySource": "https://github.com/HoustonSI/WorldCupUSSpatialData101",
+    "heatIndexMethod": "NWS Rothfusz regression with low/high humidity adjustments; simple heat-index preliminary calculation averaged with air temperature below 80F. Degrees Fahrenheit. p95 uses nearest rank ceil(0.95*n), 47th sorted sample of49.",
+    "heatIndexSource": "https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml",
+    "limitations": [
+      "Historical modeled grid weather, not stadium observations, street microclimate, WBGT, medical risk or a 2026 forecast.",
+      "Only49 afternoons in one prior summer: a comparable screening window, not a climate normal or future prediction.",
+      "Ranks may change with date/time/model; climate priority alone is not readiness or investment priority.",
+      "Heat index refers to shade/light winds and does not model solar exposure. Values below80F are comfort context, not severe-heat warning.",
+      "p95 is a sample percentile, not an uncertainty bound."
+    ]
+  },
+  "cities": [
+    {
+      "id": "atlanta",
+      "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
+      "municipality": "Atlanta, GA",
+      "timezone": "America/New_York",
+      "latitude": 33.75555556,
+      "longitude": -84.4,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Mercedes-Benz_Stadium",
+      "gridLatitude": 33.75,
+      "gridLongitude": -84.5,
+      "sampleCount": 49,
+      "medianTemperatureC": 30.4,
+      "medianHumidity": 57,
+      "medianHeatIndexF": 91.5,
+      "p95HeatIndexF": 96.9,
+      "daysHeatIndexAbove90": 29,
+      "daysHeatIndexAbove100": 1,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 47,
+          "heatIndexF": 79.07
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 27.2,
+          "relativeHumidity": 49,
+          "heatIndexF": 81.58
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 28.8,
+          "relativeHumidity": 46,
+          "heatIndexF": 84.14
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 27.2,
+          "relativeHumidity": 67,
+          "heatIndexF": 84.07
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 26.0,
+          "relativeHumidity": 69,
+          "heatIndexF": 79.21
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 30.8,
+          "relativeHumidity": 53,
+          "heatIndexF": 91.18
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 63,
+          "heatIndexF": 92.96
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 65,
+          "heatIndexF": 82.7
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 70,
+          "heatIndexF": 79.61
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 27.0,
+          "relativeHumidity": 68,
+          "heatIndexF": 83.65
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 28.4,
+          "relativeHumidity": 62,
+          "heatIndexF": 86.57
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 67,
+          "heatIndexF": 87.15
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 29.3,
+          "relativeHumidity": 63,
+          "heatIndexF": 89.72
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 25.4,
+          "relativeHumidity": 79,
+          "heatIndexF": 78.31
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 29.4,
+          "relativeHumidity": 60,
+          "heatIndexF": 89.11
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 63,
+          "heatIndexF": 91.48
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 29.5,
+          "relativeHumidity": 61,
+          "heatIndexF": 89.75
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 27.8,
+          "relativeHumidity": 68,
+          "heatIndexF": 86.08
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 27.0,
+          "relativeHumidity": 74,
+          "heatIndexF": 84.55
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 53,
+          "heatIndexF": 88.2
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 29.9,
+          "relativeHumidity": 55,
+          "heatIndexF": 89.1
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 31.4,
+          "relativeHumidity": 51,
+          "heatIndexF": 92.32
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 32.1,
+          "relativeHumidity": 52,
+          "heatIndexF": 95.09
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 47,
+          "heatIndexF": 96.86
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 33.9,
+          "relativeHumidity": 49,
+          "heatIndexF": 100.12
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 58,
+          "heatIndexF": 91.05
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 31.4,
+          "relativeHumidity": 57,
+          "heatIndexF": 94.87
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 57,
+          "heatIndexF": 90.05
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 64,
+          "heatIndexF": 87.37
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 58,
+          "heatIndexF": 92.07
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 62,
+          "heatIndexF": 93.68
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 60,
+          "heatIndexF": 92.5
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 32.5,
+          "relativeHumidity": 41,
+          "heatIndexF": 91.78
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 32.2,
+          "relativeHumidity": 44,
+          "heatIndexF": 92.04
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 32.3,
+          "relativeHumidity": 39,
+          "heatIndexF": 90.55
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 32.8,
+          "relativeHumidity": 40,
+          "heatIndexF": 92.25
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 33.6,
+          "relativeHumidity": 40,
+          "heatIndexF": 94.56
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 50,
+          "heatIndexF": 92.88
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 44,
+          "heatIndexF": 95.41
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 25.9,
+          "relativeHumidity": 80,
+          "heatIndexF": 79.28
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 58,
+          "heatIndexF": 92.07
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 57,
+          "heatIndexF": 94.5
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 32.0,
+          "relativeHumidity": 53,
+          "heatIndexF": 95.2
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 48,
+          "heatIndexF": 95.29
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 34.1,
+          "relativeHumidity": 45,
+          "heatIndexF": 98.61
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 56,
+          "heatIndexF": 93.7
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 52,
+          "heatIndexF": 94.4
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 32.5,
+          "relativeHumidity": 52,
+          "heatIndexF": 96.52
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 53,
+          "heatIndexF": 94.85
+        }
+      ]
+    },
+    {
+      "id": "boston",
+      "city": "Boston",
+      "venue": "Gillette Stadium",
+      "municipality": "Foxborough, MA",
+      "timezone": "America/New_York",
+      "latitude": 42.091,
+      "longitude": -71.264,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Gillette_Stadium",
+      "gridLatitude": 42.0,
+      "gridLongitude": -71.25,
+      "sampleCount": 49,
+      "medianTemperatureC": 27.3,
+      "medianHumidity": 54,
+      "medianHeatIndexF": 80.9,
+      "p95HeatIndexF": 98.4,
+      "daysHeatIndexAbove90": 13,
+      "daysHeatIndexAbove100": 2,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 16.9,
+          "relativeHumidity": 48,
+          "heatIndexF": 61.52
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 20.2,
+          "relativeHumidity": 44,
+          "heatIndexF": 67.66
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 24.9,
+          "relativeHumidity": 27,
+          "heatIndexF": 76.15
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 37,
+          "heatIndexF": 80.88
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 32.2,
+          "relativeHumidity": 43,
+          "heatIndexF": 91.67
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 28.1,
+          "relativeHumidity": 58,
+          "heatIndexF": 84.87
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 20.1,
+          "relativeHumidity": 92,
+          "heatIndexF": 68.6
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 21.7,
+          "relativeHumidity": 68,
+          "heatIndexF": 71.06
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 17.9,
+          "relativeHumidity": 82,
+          "heatIndexF": 64.21
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 18.2,
+          "relativeHumidity": 96,
+          "heatIndexF": 65.1
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 27.3,
+          "relativeHumidity": 41,
+          "heatIndexF": 80.86
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 29.9,
+          "relativeHumidity": 34,
+          "heatIndexF": 84.16
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 23.9,
+          "relativeHumidity": 44,
+          "heatIndexF": 74.66
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 15.2,
+          "relativeHumidity": 83,
+          "heatIndexF": 59.13
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 19.0,
+          "relativeHumidity": 61,
+          "heatIndexF": 65.79
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 23.8,
+          "relativeHumidity": 44,
+          "heatIndexF": 74.47
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 21.0,
+          "relativeHumidity": 83,
+          "heatIndexF": 70.09
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 23.0,
+          "relativeHumidity": 81,
+          "heatIndexF": 73.82
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 31.5,
+          "relativeHumidity": 54,
+          "heatIndexF": 93.89
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 27.5,
+          "relativeHumidity": 39,
+          "heatIndexF": 80.94
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 41,
+          "heatIndexF": 82.41
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 47,
+          "heatIndexF": 96.86
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 33.8,
+          "relativeHumidity": 50,
+          "heatIndexF": 100.32
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 38.6,
+          "relativeHumidity": 29,
+          "heatIndexF": 104.26
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 60,
+          "heatIndexF": 95.89
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 17.7,
+          "relativeHumidity": 76,
+          "heatIndexF": 63.69
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 24.1,
+          "relativeHumidity": 40,
+          "heatIndexF": 74.94
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 21.0,
+          "relativeHumidity": 90,
+          "heatIndexF": 70.25
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 44,
+          "heatIndexF": 85.88
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 45,
+          "heatIndexF": 86.57
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 61,
+          "heatIndexF": 94.79
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 27.5,
+          "relativeHumidity": 66,
+          "heatIndexF": 84.76
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 32.0,
+          "relativeHumidity": 30,
+          "heatIndexF": 87.47
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 26.5,
+          "relativeHumidity": 36,
+          "heatIndexF": 79.38
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 35,
+          "heatIndexF": 81.52
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 32.8,
+          "relativeHumidity": 44,
+          "heatIndexF": 93.84
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 67,
+          "heatIndexF": 95.04
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 33.6,
+          "relativeHumidity": 48,
+          "heatIndexF": 98.44
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 25.2,
+          "relativeHumidity": 76,
+          "heatIndexF": 77.86
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 19.0,
+          "relativeHumidity": 95,
+          "heatIndexF": 66.59
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 26.1,
+          "relativeHumidity": 71,
+          "heatIndexF": 79.45
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 26.1,
+          "relativeHumidity": 72,
+          "heatIndexF": 79.47
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 26.7,
+          "relativeHumidity": 66,
+          "heatIndexF": 82.57
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 26.6,
+          "relativeHumidity": 75,
+          "heatIndexF": 83.35
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 71,
+          "heatIndexF": 94.18
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 64,
+          "heatIndexF": 96.17
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 28.8,
+          "relativeHumidity": 80,
+          "heatIndexF": 93.54
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 45,
+          "heatIndexF": 79.03
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 27.5,
+          "relativeHumidity": 47,
+          "heatIndexF": 81.85
+        }
+      ]
+    },
+    {
+      "id": "dallas",
+      "city": "Dallas",
+      "venue": "AT&T Stadium",
+      "municipality": "Arlington, TX",
+      "timezone": "America/Chicago",
+      "latitude": 32.74777778,
+      "longitude": -97.09277778,
+      "coordinateSource": "https://en.wikipedia.org/wiki/AT%26T_Stadium",
+      "gridLatitude": 32.75,
+      "gridLongitude": -97.0,
+      "sampleCount": 49,
+      "medianTemperatureC": 32.6,
+      "medianHumidity": 54,
+      "medianHeatIndexF": 96.8,
+      "p95HeatIndexF": 101.5,
+      "daysHeatIndexAbove90": 40,
+      "daysHeatIndexAbove100": 8,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 56,
+          "heatIndexF": 91.98
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 56,
+          "heatIndexF": 101.5
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 31.5,
+          "relativeHumidity": 57,
+          "heatIndexF": 95.24
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 25.8,
+          "relativeHumidity": 67,
+          "heatIndexF": 78.79
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 68,
+          "heatIndexF": 95.92
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 32.3,
+          "relativeHumidity": 56,
+          "heatIndexF": 97.81
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 32.0,
+          "relativeHumidity": 57,
+          "heatIndexF": 97.15
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 32.9,
+          "relativeHumidity": 62,
+          "heatIndexF": 103.97
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 55,
+          "heatIndexF": 91.6
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 26.5,
+          "relativeHumidity": 67,
+          "heatIndexF": 82.16
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 24.3,
+          "relativeHumidity": 82,
+          "heatIndexF": 76.3
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 70,
+          "heatIndexF": 79.61
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 32.1,
+          "relativeHumidity": 55,
+          "heatIndexF": 96.53
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 33.1,
+          "relativeHumidity": 56,
+          "heatIndexF": 101.07
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 67,
+          "heatIndexF": 85.25
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 33.0,
+          "relativeHumidity": 52,
+          "heatIndexF": 98.38
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 32.9,
+          "relativeHumidity": 54,
+          "heatIndexF": 99.09
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 50,
+          "heatIndexF": 98.42
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 33.7,
+          "relativeHumidity": 50,
+          "heatIndexF": 99.94
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 33.5,
+          "relativeHumidity": 49,
+          "heatIndexF": 98.62
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 32.5,
+          "relativeHumidity": 51,
+          "heatIndexF": 96.03
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 33.0,
+          "relativeHumidity": 48,
+          "heatIndexF": 96.31
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 33.1,
+          "relativeHumidity": 49,
+          "heatIndexF": 97.17
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 47,
+          "heatIndexF": 96.86
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 60,
+          "heatIndexF": 94.34
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 32.1,
+          "relativeHumidity": 55,
+          "heatIndexF": 96.53
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 49,
+          "heatIndexF": 95.76
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 33.7,
+          "relativeHumidity": 48,
+          "heatIndexF": 98.81
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 34.2,
+          "relativeHumidity": 42,
+          "heatIndexF": 97.38
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 34.4,
+          "relativeHumidity": 44,
+          "heatIndexF": 99.12
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 53,
+          "heatIndexF": 94.85
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 32.6,
+          "relativeHumidity": 49,
+          "heatIndexF": 95.42
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 29.5,
+          "relativeHumidity": 53,
+          "heatIndexF": 87.38
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 65,
+          "heatIndexF": 95.39
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 28.1,
+          "relativeHumidity": 73,
+          "heatIndexF": 88.31
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 29.1,
+          "relativeHumidity": 62,
+          "heatIndexF": 88.75
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 63,
+          "heatIndexF": 94.5
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 33.4,
+          "relativeHumidity": 53,
+          "heatIndexF": 100.51
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 32.8,
+          "relativeHumidity": 53,
+          "heatIndexF": 98.15
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 34.6,
+          "relativeHumidity": 46,
+          "heatIndexF": 101.0
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 33.4,
+          "relativeHumidity": 48,
+          "heatIndexF": 97.72
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 57,
+          "heatIndexF": 96.76
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 29.3,
+          "relativeHumidity": 63,
+          "heatIndexF": 89.72
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 65,
+          "heatIndexF": 94.98
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 33.8,
+          "relativeHumidity": 52,
+          "heatIndexF": 101.53
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 33.6,
+          "relativeHumidity": 53,
+          "heatIndexF": 101.33
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 34.0,
+          "relativeHumidity": 44,
+          "heatIndexF": 97.73
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 35.2,
+          "relativeHumidity": 40,
+          "heatIndexF": 99.66
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 35.0,
+          "relativeHumidity": 43,
+          "heatIndexF": 100.68
+        }
+      ]
+    },
+    {
+      "id": "houston",
+      "city": "Houston",
+      "venue": "NRG Stadium",
+      "municipality": "Houston, TX",
+      "timezone": "America/Chicago",
+      "latitude": 29.68472222,
+      "longitude": -95.41083333,
+      "coordinateSource": "https://en.wikipedia.org/wiki/NRG_Stadium",
+      "gridLatitude": 29.75,
+      "gridLongitude": -95.5,
+      "sampleCount": 49,
+      "medianTemperatureC": 31.4,
+      "medianHumidity": 64,
+      "medianHeatIndexF": 97.8,
+      "p95HeatIndexF": 105.0,
+      "daysHeatIndexAbove90": 44,
+      "daysHeatIndexAbove100": 19,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 55,
+          "heatIndexF": 95.78
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 32.2,
+          "relativeHumidity": 56,
+          "heatIndexF": 97.42
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 65,
+          "heatIndexF": 94.17
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 73,
+          "heatIndexF": 94.56
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 31.4,
+          "relativeHumidity": 63,
+          "heatIndexF": 97.78
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 33.4,
+          "relativeHumidity": 55,
+          "heatIndexF": 101.73
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 34.1,
+          "relativeHumidity": 49,
+          "heatIndexF": 100.89
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 34.7,
+          "relativeHumidity": 50,
+          "heatIndexF": 103.95
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 34.0,
+          "relativeHumidity": 51,
+          "heatIndexF": 101.72
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 66,
+          "heatIndexF": 95.02
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 27.5,
+          "relativeHumidity": 76,
+          "heatIndexF": 86.73
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 24.7,
+          "relativeHumidity": 87,
+          "heatIndexF": 77.18
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 72,
+          "heatIndexF": 94.15
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 64,
+          "heatIndexF": 94.54
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 71,
+          "heatIndexF": 96.87
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 72,
+          "heatIndexF": 89.58
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 60,
+          "heatIndexF": 101.77
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 57,
+          "heatIndexF": 102.12
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 33.7,
+          "relativeHumidity": 58,
+          "heatIndexF": 105.03
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 33.4,
+          "relativeHumidity": 57,
+          "heatIndexF": 102.99
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 33.9,
+          "relativeHumidity": 50,
+          "heatIndexF": 100.71
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 65,
+          "heatIndexF": 96.65
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 66,
+          "heatIndexF": 96.28
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 66,
+          "heatIndexF": 98.92
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 78,
+          "heatIndexF": 90.54
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 72,
+          "heatIndexF": 91.59
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 69,
+          "heatIndexF": 97.74
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 64,
+          "heatIndexF": 99.63
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 76,
+          "heatIndexF": 93.02
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 31.4,
+          "relativeHumidity": 68,
+          "heatIndexF": 100.49
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 33.1,
+          "relativeHumidity": 54,
+          "heatIndexF": 99.89
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 33.5,
+          "relativeHumidity": 53,
+          "heatIndexF": 100.92
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 27.1,
+          "relativeHumidity": 82,
+          "heatIndexF": 86.3
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 32.4,
+          "relativeHumidity": 69,
+          "heatIndexF": 106.19
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 63,
+          "heatIndexF": 97.36
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 32.9,
+          "relativeHumidity": 54,
+          "heatIndexF": 99.09
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 65,
+          "heatIndexF": 95.81
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 26.1,
+          "relativeHumidity": 81,
+          "heatIndexF": 79.68
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 29.1,
+          "relativeHumidity": 71,
+          "heatIndexF": 91.65
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 33.1,
+          "relativeHumidity": 57,
+          "heatIndexF": 101.68
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 31.6,
+          "relativeHumidity": 67,
+          "heatIndexF": 100.88
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 32.6,
+          "relativeHumidity": 64,
+          "heatIndexF": 103.84
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 28.4,
+          "relativeHumidity": 78,
+          "heatIndexF": 90.98
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 68,
+          "heatIndexF": 95.49
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 58,
+          "heatIndexF": 100.57
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 34.3,
+          "relativeHumidity": 51,
+          "heatIndexF": 102.95
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 32.3,
+          "relativeHumidity": 57,
+          "heatIndexF": 98.34
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 32.9,
+          "relativeHumidity": 64,
+          "heatIndexF": 105.32
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 58,
+          "heatIndexF": 102.75
+        }
+      ]
+    },
+    {
+      "id": "kansas-city",
+      "city": "Kansas City",
+      "venue": "Arrowhead Stadium",
+      "municipality": "Kansas City, MO",
+      "timezone": "America/Chicago",
+      "latitude": 39.04888889,
+      "longitude": -94.48388889,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Arrowhead_Stadium",
+      "gridLatitude": 39.0,
+      "gridLongitude": -94.5,
+      "sampleCount": 49,
+      "medianTemperatureC": 30.2,
+      "medianHumidity": 56,
+      "medianHeatIndexF": 90.4,
+      "p95HeatIndexF": 101.3,
+      "daysHeatIndexAbove90": 25,
+      "daysHeatIndexAbove100": 3,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 35,
+          "heatIndexF": 83.78
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 49,
+          "heatIndexF": 87.61
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 20.4,
+          "relativeHumidity": 96,
+          "heatIndexF": 69.26
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 23.2,
+          "relativeHumidity": 57,
+          "heatIndexF": 73.64
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 22.1,
+          "relativeHumidity": 70,
+          "heatIndexF": 71.86
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 23.3,
+          "relativeHumidity": 77,
+          "heatIndexF": 74.3
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 22.1,
+          "relativeHumidity": 74,
+          "heatIndexF": 71.96
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 25.6,
+          "relativeHumidity": 56,
+          "heatIndexF": 78.15
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 26.6,
+          "relativeHumidity": 31,
+          "heatIndexF": 79.45
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 28.7,
+          "relativeHumidity": 35,
+          "heatIndexF": 82.28
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 47,
+          "heatIndexF": 90.54
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 25.7,
+          "relativeHumidity": 56,
+          "heatIndexF": 78.34
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 26.6,
+          "relativeHumidity": 65,
+          "heatIndexF": 82.2
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 28.9,
+          "relativeHumidity": 58,
+          "heatIndexF": 87.03
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 56,
+          "heatIndexF": 86.8
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 51,
+          "heatIndexF": 89.87
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 25.8,
+          "relativeHumidity": 66,
+          "heatIndexF": 78.76
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 25.4,
+          "relativeHumidity": 68,
+          "heatIndexF": 78.05
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 44,
+          "heatIndexF": 87.27
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 34.1,
+          "relativeHumidity": 53,
+          "heatIndexF": 103.42
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 33.6,
+          "relativeHumidity": 53,
+          "heatIndexF": 101.33
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 48,
+          "heatIndexF": 97.01
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 57,
+          "heatIndexF": 102.12
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 32.0,
+          "relativeHumidity": 60,
+          "heatIndexF": 98.73
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 33.2,
+          "relativeHumidity": 53,
+          "heatIndexF": 99.71
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 55,
+          "heatIndexF": 95.78
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 31.0,
+          "relativeHumidity": 61,
+          "heatIndexF": 95.18
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 67,
+          "heatIndexF": 92.2
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 28.9,
+          "relativeHumidity": 72,
+          "heatIndexF": 91.18
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 25.9,
+          "relativeHumidity": 73,
+          "heatIndexF": 79.12
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 29.5,
+          "relativeHumidity": 44,
+          "heatIndexF": 85.22
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 46,
+          "heatIndexF": 88.31
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 32.0,
+          "relativeHumidity": 54,
+          "heatIndexF": 95.67
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 54,
+          "heatIndexF": 94.59
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 63,
+          "heatIndexF": 93.34
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 66,
+          "heatIndexF": 95.02
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 55,
+          "heatIndexF": 95.05
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 29.3,
+          "relativeHumidity": 65,
+          "heatIndexF": 90.37
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 32.1,
+          "relativeHumidity": 49,
+          "heatIndexF": 93.75
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 32.9,
+          "relativeHumidity": 50,
+          "heatIndexF": 96.96
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 32.5,
+          "relativeHumidity": 58,
+          "heatIndexF": 99.72
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 28.8,
+          "relativeHumidity": 64,
+          "heatIndexF": 88.34
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 29.5,
+          "relativeHumidity": 61,
+          "heatIndexF": 89.75
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 31.1,
+          "relativeHumidity": 50,
+          "heatIndexF": 91.01
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 53,
+          "heatIndexF": 94.85
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 33.1,
+          "relativeHumidity": 53,
+          "heatIndexF": 99.32
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 27.1,
+          "relativeHumidity": 70,
+          "heatIndexF": 84.25
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 70,
+          "heatIndexF": 95.95
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 57,
+          "heatIndexF": 99.98
+        }
+      ]
+    },
+    {
+      "id": "los-angeles",
+      "city": "Los Angeles",
+      "venue": "SoFi Stadium",
+      "municipality": "Inglewood, CA",
+      "timezone": "America/Los_Angeles",
+      "latitude": 33.953,
+      "longitude": -118.339,
+      "coordinateSource": "https://en.wikipedia.org/wiki/SoFi_Stadium",
+      "gridLatitude": 34.0,
+      "gridLongitude": -118.25,
+      "sampleCount": 49,
+      "medianTemperatureC": 26.9,
+      "medianHumidity": 48,
+      "medianHeatIndexF": 81.2,
+      "p95HeatIndexF": 87.9,
+      "daysHeatIndexAbove90": 0,
+      "daysHeatIndexAbove100": 0,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 28.9,
+          "relativeHumidity": 30,
+          "heatIndexF": 82.02
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 24.8,
+          "relativeHumidity": 52,
+          "heatIndexF": 76.54
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 22.1,
+          "relativeHumidity": 64,
+          "heatIndexF": 71.72
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 22.9,
+          "relativeHumidity": 60,
+          "heatIndexF": 73.14
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 23.9,
+          "relativeHumidity": 55,
+          "heatIndexF": 74.91
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 24.2,
+          "relativeHumidity": 56,
+          "heatIndexF": 75.5
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 24.1,
+          "relativeHumidity": 54,
+          "heatIndexF": 75.27
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 24.7,
+          "relativeHumidity": 56,
+          "heatIndexF": 76.45
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 24.4,
+          "relativeHumidity": 56,
+          "heatIndexF": 75.88
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 26.7,
+          "relativeHumidity": 50,
+          "heatIndexF": 80.86
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 52,
+          "heatIndexF": 79.19
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 25.4,
+          "relativeHumidity": 52,
+          "heatIndexF": 77.68
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 25.5,
+          "relativeHumidity": 52,
+          "heatIndexF": 77.87
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 27.7,
+          "relativeHumidity": 48,
+          "heatIndexF": 82.33
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 32.5,
+          "relativeHumidity": 34,
+          "heatIndexF": 89.53
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 37,
+          "heatIndexF": 86.69
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 33,
+          "heatIndexF": 87.92
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 37,
+          "heatIndexF": 86.27
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 26.4,
+          "relativeHumidity": 47,
+          "heatIndexF": 79.45
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 24.7,
+          "relativeHumidity": 53,
+          "heatIndexF": 76.38
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 23.4,
+          "relativeHumidity": 55,
+          "heatIndexF": 73.97
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 26.0,
+          "relativeHumidity": 46,
+          "heatIndexF": 78.67
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 24.3,
+          "relativeHumidity": 50,
+          "heatIndexF": 75.55
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 24.5,
+          "relativeHumidity": 49,
+          "heatIndexF": 75.91
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 26.9,
+          "relativeHumidity": 46,
+          "heatIndexF": 80.78
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 26.7,
+          "relativeHumidity": 51,
+          "heatIndexF": 80.95
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 44,
+          "heatIndexF": 81.65
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 32,
+          "heatIndexF": 84.92
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 31.4,
+          "relativeHumidity": 29,
+          "heatIndexF": 86.1
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 36,
+          "heatIndexF": 85.25
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 39,
+          "heatIndexF": 81.99
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 26.1,
+          "relativeHumidity": 46,
+          "heatIndexF": 78.86
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 25.9,
+          "relativeHumidity": 48,
+          "heatIndexF": 78.53
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 42,
+          "heatIndexF": 82.9
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 36,
+          "heatIndexF": 83.94
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 28.6,
+          "relativeHumidity": 40,
+          "heatIndexF": 82.78
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 41,
+          "heatIndexF": 82.75
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 35,
+          "heatIndexF": 85.85
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 35,
+          "heatIndexF": 88.42
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 39,
+          "heatIndexF": 86.72
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 27.1,
+          "relativeHumidity": 49,
+          "heatIndexF": 81.41
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 26.9,
+          "relativeHumidity": 50,
+          "heatIndexF": 81.18
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 48,
+          "heatIndexF": 82.15
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 51,
+          "heatIndexF": 81.12
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 49,
+          "heatIndexF": 79.12
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 27.4,
+          "relativeHumidity": 43,
+          "heatIndexF": 81.22
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 29.2,
+          "relativeHumidity": 39,
+          "heatIndexF": 83.69
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 27.7,
+          "relativeHumidity": 45,
+          "heatIndexF": 81.94
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 53,
+          "heatIndexF": 81.33
+        }
+      ]
+    },
+    {
+      "id": "miami",
+      "city": "Miami",
+      "venue": "Hard Rock Stadium",
+      "municipality": "Miami Gardens, FL",
+      "timezone": "America/New_York",
+      "latitude": 25.95805556,
+      "longitude": -80.23888889,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Hard_Rock_Stadium",
+      "gridLatitude": 26.0,
+      "gridLongitude": -80.25,
+      "sampleCount": 49,
+      "medianTemperatureC": 29.8,
+      "medianHumidity": 70,
+      "medianHeatIndexF": 93.8,
+      "p95HeatIndexF": 98.7,
+      "daysHeatIndexAbove90": 38,
+      "daysHeatIndexAbove100": 0,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 71,
+          "heatIndexF": 88.53
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 25.6,
+          "relativeHumidity": 83,
+          "heatIndexF": 78.78
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 25.2,
+          "relativeHumidity": 85,
+          "heatIndexF": 78.08
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 28.4,
+          "relativeHumidity": 73,
+          "heatIndexF": 89.48
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 29.1,
+          "relativeHumidity": 72,
+          "heatIndexF": 92.0
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 69,
+          "heatIndexF": 94.64
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 68,
+          "heatIndexF": 95.06
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 68,
+          "heatIndexF": 96.36
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 29.9,
+          "relativeHumidity": 70,
+          "heatIndexF": 94.63
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 75,
+          "heatIndexF": 89.65
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 75,
+          "heatIndexF": 89.65
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 70,
+          "heatIndexF": 93.77
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 66,
+          "heatIndexF": 94.19
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 65,
+          "heatIndexF": 94.17
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 65,
+          "heatIndexF": 94.17
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 67,
+          "heatIndexF": 93.8
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 67,
+          "heatIndexF": 93.8
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 73,
+          "heatIndexF": 96.41
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 69,
+          "heatIndexF": 92.96
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 30.0,
+          "relativeHumidity": 65,
+          "heatIndexF": 92.99
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 68,
+          "heatIndexF": 92.58
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 73,
+          "heatIndexF": 95.02
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 30.1,
+          "relativeHumidity": 65,
+          "heatIndexF": 93.38
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 68,
+          "heatIndexF": 93.39
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 28.4,
+          "relativeHumidity": 70,
+          "heatIndexF": 88.63
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 28.6,
+          "relativeHumidity": 73,
+          "heatIndexF": 90.28
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 28.8,
+          "relativeHumidity": 76,
+          "heatIndexF": 92.11
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 68,
+          "heatIndexF": 95.49
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 69,
+          "heatIndexF": 93.37
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 69,
+          "heatIndexF": 92.96
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 78,
+          "heatIndexF": 90.54
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 30.2,
+          "relativeHumidity": 69,
+          "heatIndexF": 95.5
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 85,
+          "heatIndexF": 85.51
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 28.1,
+          "relativeHumidity": 76,
+          "heatIndexF": 89.11
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 29.5,
+          "relativeHumidity": 75,
+          "heatIndexF": 94.93
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 28.6,
+          "relativeHumidity": 76,
+          "heatIndexF": 91.23
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 67,
+          "heatIndexF": 99.0
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 70,
+          "heatIndexF": 96.4
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 70,
+          "heatIndexF": 94.2
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 69,
+          "heatIndexF": 97.74
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 70,
+          "heatIndexF": 98.25
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 29.8,
+          "relativeHumidity": 75,
+          "heatIndexF": 96.36
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 29.6,
+          "relativeHumidity": 73,
+          "heatIndexF": 94.56
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 27.5,
+          "relativeHumidity": 80,
+          "heatIndexF": 87.59
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 27.9,
+          "relativeHumidity": 80,
+          "heatIndexF": 89.33
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 30.1,
+          "relativeHumidity": 72,
+          "heatIndexF": 96.42
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 69,
+          "heatIndexF": 98.67
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 31.0,
+          "relativeHumidity": 69,
+          "heatIndexF": 99.14
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 67,
+          "heatIndexF": 97.64
+        }
+      ]
+    },
+    {
+      "id": "new-york-new-jersey",
+      "city": "New York / New Jersey",
+      "venue": "MetLife Stadium",
+      "municipality": "East Rutherford, NJ",
+      "timezone": "America/New_York",
+      "latitude": 40.81352778,
+      "longitude": -74.07436111,
+      "coordinateSource": "https://en.wikipedia.org/wiki/MetLife_Stadium",
+      "gridLatitude": 40.75,
+      "gridLongitude": -74.0,
+      "sampleCount": 49,
+      "medianTemperatureC": 28.1,
+      "medianHumidity": 56,
+      "medianHeatIndexF": 85.0,
+      "p95HeatIndexF": 102.8,
+      "daysHeatIndexAbove90": 14,
+      "daysHeatIndexAbove100": 4,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 18.5,
+          "relativeHumidity": 43,
+          "heatIndexF": 64.43
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 20.7,
+          "relativeHumidity": 43,
+          "heatIndexF": 68.58
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 24.2,
+          "relativeHumidity": 34,
+          "heatIndexF": 74.99
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 27.1,
+          "relativeHumidity": 50,
+          "heatIndexF": 81.52
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 54,
+          "heatIndexF": 85.05
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 56,
+          "heatIndexF": 84.97
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 22.9,
+          "relativeHumidity": 81,
+          "heatIndexF": 73.63
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 21.7,
+          "relativeHumidity": 73,
+          "heatIndexF": 71.18
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 18.1,
+          "relativeHumidity": 90,
+          "heatIndexF": 64.77
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 21.9,
+          "relativeHumidity": 81,
+          "heatIndexF": 71.74
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 27.7,
+          "relativeHumidity": 40,
+          "heatIndexF": 81.34
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 44,
+          "heatIndexF": 87.51
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 24.5,
+          "relativeHumidity": 47,
+          "heatIndexF": 75.86
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 17.1,
+          "relativeHumidity": 85,
+          "heatIndexF": 62.77
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 18.0,
+          "relativeHumidity": 80,
+          "heatIndexF": 64.35
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 19.7,
+          "relativeHumidity": 80,
+          "heatIndexF": 67.56
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 20.2,
+          "relativeHumidity": 89,
+          "heatIndexF": 68.72
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 26.4,
+          "relativeHumidity": 73,
+          "heatIndexF": 82.5
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 52,
+          "heatIndexF": 92.07
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 27.4,
+          "relativeHumidity": 47,
+          "heatIndexF": 81.68
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 48,
+          "heatIndexF": 88.37
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 66,
+          "heatIndexF": 89.62
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 33.5,
+          "relativeHumidity": 63,
+          "heatIndexF": 107.64
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 36.2,
+          "relativeHumidity": 42,
+          "heatIndexF": 104.51
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 34.9,
+          "relativeHumidity": 47,
+          "heatIndexF": 102.78
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 23.3,
+          "relativeHumidity": 72,
+          "heatIndexF": 74.18
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 21.3,
+          "relativeHumidity": 54,
+          "heatIndexF": 69.98
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 27.0,
+          "relativeHumidity": 70,
+          "heatIndexF": 83.94
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 47,
+          "heatIndexF": 90.25
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 54,
+          "heatIndexF": 91.87
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 32.4,
+          "relativeHumidity": 58,
+          "heatIndexF": 99.3
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 28.7,
+          "relativeHumidity": 62,
+          "heatIndexF": 87.48
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 39,
+          "heatIndexF": 87.85
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 27.3,
+          "relativeHumidity": 43,
+          "heatIndexF": 81.07
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 29.4,
+          "relativeHumidity": 43,
+          "heatIndexF": 84.8
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 46,
+          "heatIndexF": 89.1
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 30.4,
+          "relativeHumidity": 71,
+          "heatIndexF": 97.34
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 56,
+          "heatIndexF": 101.92
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 31.8,
+          "relativeHumidity": 52,
+          "heatIndexF": 94.05
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 28.1,
+          "relativeHumidity": 63,
+          "heatIndexF": 85.92
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 27.9,
+          "relativeHumidity": 70,
+          "heatIndexF": 86.85
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 67,
+          "heatIndexF": 87.15
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 27.7,
+          "relativeHumidity": 72,
+          "heatIndexF": 86.6
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 68,
+          "heatIndexF": 92.98
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 29.1,
+          "relativeHumidity": 73,
+          "heatIndexF": 92.36
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 63,
+          "heatIndexF": 99.08
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 55,
+          "heatIndexF": 98.85
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 27.1,
+          "relativeHumidity": 50,
+          "heatIndexF": 81.52
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 26.4,
+          "relativeHumidity": 68,
+          "heatIndexF": 79.94
+        }
+      ]
+    },
+    {
+      "id": "philadelphia",
+      "city": "Philadelphia",
+      "venue": "Lincoln Financial Field",
+      "municipality": "Philadelphia, PA",
+      "timezone": "America/New_York",
+      "latitude": 39.90083333,
+      "longitude": -75.1675,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Lincoln_Financial_Field",
+      "gridLatitude": 40.0,
+      "gridLongitude": -75.25,
+      "sampleCount": 49,
+      "medianTemperatureC": 30.1,
+      "medianHumidity": 54,
+      "medianHeatIndexF": 90.7,
+      "p95HeatIndexF": 107.8,
+      "daysHeatIndexAbove90": 26,
+      "daysHeatIndexAbove100": 8,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 20.9,
+          "relativeHumidity": 32,
+          "heatIndexF": 68.7
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 23.0,
+          "relativeHumidity": 32,
+          "heatIndexF": 72.67
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 27,
+          "heatIndexF": 80.05
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 30.9,
+          "relativeHumidity": 40,
+          "heatIndexF": 87.41
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 31.1,
+          "relativeHumidity": 47,
+          "heatIndexF": 89.97
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 30.1,
+          "relativeHumidity": 50,
+          "heatIndexF": 88.16
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 25.7,
+          "relativeHumidity": 74,
+          "heatIndexF": 78.76
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 22.4,
+          "relativeHumidity": 75,
+          "heatIndexF": 72.55
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 21.9,
+          "relativeHumidity": 80,
+          "heatIndexF": 71.72
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 26.4,
+          "relativeHumidity": 68,
+          "heatIndexF": 79.94
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 29.2,
+          "relativeHumidity": 34,
+          "heatIndexF": 82.95
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 42,
+          "heatIndexF": 92.73
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 38,
+          "heatIndexF": 81.86
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 18.7,
+          "relativeHumidity": 89,
+          "heatIndexF": 65.88
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 18.0,
+          "relativeHumidity": 82,
+          "heatIndexF": 64.4
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 19.1,
+          "relativeHumidity": 87,
+          "heatIndexF": 66.59
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 24.2,
+          "relativeHumidity": 75,
+          "heatIndexF": 75.95
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 29.2,
+          "relativeHumidity": 67,
+          "heatIndexF": 90.67
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 32.6,
+          "relativeHumidity": 53,
+          "heatIndexF": 97.4
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 45,
+          "heatIndexF": 84.37
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 31.9,
+          "relativeHumidity": 43,
+          "heatIndexF": 90.83
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 31.1,
+          "relativeHumidity": 60,
+          "heatIndexF": 95.11
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 37.5,
+          "relativeHumidity": 41,
+          "heatIndexF": 108.92
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 38.6,
+          "relativeHumidity": 34,
+          "heatIndexF": 107.75
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 37.1,
+          "relativeHumidity": 43,
+          "heatIndexF": 108.86
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 29.9,
+          "relativeHumidity": 62,
+          "heatIndexF": 91.47
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 21.8,
+          "relativeHumidity": 70,
+          "heatIndexF": 71.3
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 29.7,
+          "relativeHumidity": 64,
+          "heatIndexF": 91.48
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 34.3,
+          "relativeHumidity": 46,
+          "heatIndexF": 99.88
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 32.7,
+          "relativeHumidity": 58,
+          "heatIndexF": 100.57
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 32.4,
+          "relativeHumidity": 62,
+          "heatIndexF": 101.64
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 28.7,
+          "relativeHumidity": 73,
+          "heatIndexF": 90.69
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 33.0,
+          "relativeHumidity": 33,
+          "heatIndexF": 90.43
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 29.2,
+          "relativeHumidity": 37,
+          "heatIndexF": 83.38
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 30.8,
+          "relativeHumidity": 38,
+          "heatIndexF": 86.7
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 31.8,
+          "relativeHumidity": 49,
+          "heatIndexF": 92.79
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 29.9,
+          "relativeHumidity": 69,
+          "heatIndexF": 94.21
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 35.3,
+          "relativeHumidity": 49,
+          "heatIndexF": 105.78
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 32.4,
+          "relativeHumidity": 51,
+          "heatIndexF": 95.67
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 27.3,
+          "relativeHumidity": 69,
+          "heatIndexF": 84.7
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 31.3,
+          "relativeHumidity": 54,
+          "heatIndexF": 93.21
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 31.8,
+          "relativeHumidity": 54,
+          "heatIndexF": 94.95
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 31.5,
+          "relativeHumidity": 52,
+          "heatIndexF": 93.05
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 68,
+          "heatIndexF": 96.8
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 30.7,
+          "relativeHumidity": 59,
+          "heatIndexF": 93.18
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 32.6,
+          "relativeHumidity": 66,
+          "heatIndexF": 105.18
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 33.3,
+          "relativeHumidity": 57,
+          "heatIndexF": 102.55
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 51,
+          "heatIndexF": 84.45
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 27.0,
+          "relativeHumidity": 77,
+          "heatIndexF": 85.03
+        }
+      ]
+    },
+    {
+      "id": "san-francisco-bay-area",
+      "city": "San Francisco Bay Area",
+      "venue": "Levi's Stadium",
+      "municipality": "Santa Clara, CA",
+      "timezone": "America/Los_Angeles",
+      "latitude": 37.403,
+      "longitude": -121.97,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Levi%27s_Stadium",
+      "gridLatitude": 37.5,
+      "gridLongitude": -122.0,
+      "sampleCount": 49,
+      "medianTemperatureC": 24.9,
+      "medianHumidity": 45,
+      "medianHeatIndexF": 76.7,
+      "p95HeatIndexF": 86.5,
+      "daysHeatIndexAbove90": 0,
+      "daysHeatIndexAbove100": 0,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 22.9,
+          "relativeHumidity": 52,
+          "heatIndexF": 72.95
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 25.3,
+          "relativeHumidity": 43,
+          "heatIndexF": 77.28
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 43,
+          "heatIndexF": 78.98
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 26.3,
+          "relativeHumidity": 46,
+          "heatIndexF": 79.24
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 24.6,
+          "relativeHumidity": 48,
+          "heatIndexF": 76.07
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 26.1,
+          "relativeHumidity": 51,
+          "heatIndexF": 78.98
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 24.8,
+          "relativeHumidity": 54,
+          "heatIndexF": 76.59
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 23.4,
+          "relativeHumidity": 56,
+          "heatIndexF": 73.99
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 23.3,
+          "relativeHumidity": 57,
+          "heatIndexF": 73.83
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 22.6,
+          "relativeHumidity": 56,
+          "heatIndexF": 72.48
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 20.7,
+          "relativeHumidity": 49,
+          "heatIndexF": 68.72
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 21.4,
+          "relativeHumidity": 52,
+          "heatIndexF": 70.12
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 22.8,
+          "relativeHumidity": 49,
+          "heatIndexF": 72.69
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 24.1,
+          "relativeHumidity": 40,
+          "heatIndexF": 74.94
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 26.6,
+          "relativeHumidity": 36,
+          "heatIndexF": 79.57
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 21.8,
+          "relativeHumidity": 47,
+          "heatIndexF": 70.76
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 24.9,
+          "relativeHumidity": 41,
+          "heatIndexF": 76.47
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 28.2,
+          "relativeHumidity": 41,
+          "heatIndexF": 82.25
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 20.2,
+          "relativeHumidity": 54,
+          "heatIndexF": 67.9
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 19.5,
+          "relativeHumidity": 49,
+          "heatIndexF": 66.46
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 23.3,
+          "relativeHumidity": 37,
+          "heatIndexF": 73.36
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 24.4,
+          "relativeHumidity": 39,
+          "heatIndexF": 75.48
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 26.9,
+          "relativeHumidity": 39,
+          "heatIndexF": 80.14
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 21.7,
+          "relativeHumidity": 52,
+          "heatIndexF": 70.69
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 24.0,
+          "relativeHumidity": 51,
+          "heatIndexF": 75.01
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 23.9,
+          "relativeHumidity": 53,
+          "heatIndexF": 74.87
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 28.5,
+          "relativeHumidity": 43,
+          "heatIndexF": 83.05
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 31.1,
+          "relativeHumidity": 34,
+          "heatIndexF": 86.46
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 30.3,
+          "relativeHumidity": 32,
+          "heatIndexF": 84.56
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 29.4,
+          "relativeHumidity": 35,
+          "heatIndexF": 83.43
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 29.4,
+          "relativeHumidity": 41,
+          "heatIndexF": 84.42
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 26.6,
+          "relativeHumidity": 50,
+          "heatIndexF": 79.9
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 21.1,
+          "relativeHumidity": 58,
+          "heatIndexF": 69.69
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 22.9,
+          "relativeHumidity": 42,
+          "heatIndexF": 72.72
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 24.6,
+          "relativeHumidity": 45,
+          "heatIndexF": 76.0
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 42,
+          "heatIndexF": 80.27
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 26.2,
+          "relativeHumidity": 43,
+          "heatIndexF": 78.98
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 25.8,
+          "relativeHumidity": 45,
+          "heatIndexF": 78.27
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 24.7,
+          "relativeHumidity": 51,
+          "heatIndexF": 76.33
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 31.2,
+          "relativeHumidity": 38,
+          "heatIndexF": 87.59
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 31.7,
+          "relativeHumidity": 38,
+          "heatIndexF": 88.76
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 28.8,
+          "relativeHumidity": 41,
+          "heatIndexF": 83.29
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 29.0,
+          "relativeHumidity": 41,
+          "heatIndexF": 83.66
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 30.5,
+          "relativeHumidity": 38,
+          "heatIndexF": 86.06
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 26.5,
+          "relativeHumidity": 44,
+          "heatIndexF": 79.57
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 24.3,
+          "relativeHumidity": 48,
+          "heatIndexF": 75.51
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 26.4,
+          "relativeHumidity": 47,
+          "heatIndexF": 79.45
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 25.5,
+          "relativeHumidity": 51,
+          "heatIndexF": 77.84
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 24.9,
+          "relativeHumidity": 52,
+          "heatIndexF": 76.73
+        }
+      ]
+    },
+    {
+      "id": "seattle",
+      "city": "Seattle",
+      "venue": "Lumen Field",
+      "municipality": "Seattle, WA",
+      "timezone": "America/Los_Angeles",
+      "latitude": 47.5952,
+      "longitude": -122.3316,
+      "coordinateSource": "https://en.wikipedia.org/wiki/Lumen_Field",
+      "gridLatitude": 47.5,
+      "gridLongitude": -122.25,
+      "sampleCount": 49,
+      "medianTemperatureC": 21.6,
+      "medianHumidity": 52,
+      "medianHeatIndexF": 70.5,
+      "p95HeatIndexF": 82.4,
+      "daysHeatIndexAbove90": 0,
+      "daysHeatIndexAbove100": 0,
+      "afternoons": [
+        {
+          "localTime": "2025-06-01T15:00",
+          "temperatureC": 17.2,
+          "relativeHumidity": 53,
+          "heatIndexF": 62.2
+        },
+        {
+          "localTime": "2025-06-02T15:00",
+          "temperatureC": 19.6,
+          "relativeHumidity": 49,
+          "heatIndexF": 66.65
+        },
+        {
+          "localTime": "2025-06-03T15:00",
+          "temperatureC": 21.3,
+          "relativeHumidity": 46,
+          "heatIndexF": 69.79
+        },
+        {
+          "localTime": "2025-06-04T15:00",
+          "temperatureC": 17.8,
+          "relativeHumidity": 66,
+          "heatIndexF": 63.64
+        },
+        {
+          "localTime": "2025-06-05T15:00",
+          "temperatureC": 22.0,
+          "relativeHumidity": 56,
+          "heatIndexF": 71.35
+        },
+        {
+          "localTime": "2025-06-06T15:00",
+          "temperatureC": 24.2,
+          "relativeHumidity": 52,
+          "heatIndexF": 75.41
+        },
+        {
+          "localTime": "2025-06-07T15:00",
+          "temperatureC": 24.0,
+          "relativeHumidity": 51,
+          "heatIndexF": 75.01
+        },
+        {
+          "localTime": "2025-06-08T15:00",
+          "temperatureC": 27.6,
+          "relativeHumidity": 48,
+          "heatIndexF": 82.15
+        },
+        {
+          "localTime": "2025-06-09T15:00",
+          "temperatureC": 26.8,
+          "relativeHumidity": 49,
+          "heatIndexF": 80.92
+        },
+        {
+          "localTime": "2025-06-10T15:00",
+          "temperatureC": 24.1,
+          "relativeHumidity": 52,
+          "heatIndexF": 75.22
+        },
+        {
+          "localTime": "2025-06-11T15:00",
+          "temperatureC": 19.9,
+          "relativeHumidity": 55,
+          "heatIndexF": 67.35
+        },
+        {
+          "localTime": "2025-06-12T15:00",
+          "temperatureC": 18.1,
+          "relativeHumidity": 52,
+          "heatIndexF": 63.88
+        },
+        {
+          "localTime": "2025-06-13T15:00",
+          "temperatureC": 15.0,
+          "relativeHumidity": 63,
+          "heatIndexF": 58.28
+        },
+        {
+          "localTime": "2025-06-14T15:00",
+          "temperatureC": 17.7,
+          "relativeHumidity": 52,
+          "heatIndexF": 63.12
+        },
+        {
+          "localTime": "2025-06-15T15:00",
+          "temperatureC": 20.2,
+          "relativeHumidity": 49,
+          "heatIndexF": 67.78
+        },
+        {
+          "localTime": "2025-06-16T15:00",
+          "temperatureC": 21.9,
+          "relativeHumidity": 44,
+          "heatIndexF": 70.88
+        },
+        {
+          "localTime": "2025-06-17T15:00",
+          "temperatureC": 21.3,
+          "relativeHumidity": 43,
+          "heatIndexF": 69.72
+        },
+        {
+          "localTime": "2025-06-18T15:00",
+          "temperatureC": 20.2,
+          "relativeHumidity": 49,
+          "heatIndexF": 67.78
+        },
+        {
+          "localTime": "2025-06-19T15:00",
+          "temperatureC": 19.5,
+          "relativeHumidity": 48,
+          "heatIndexF": 66.43
+        },
+        {
+          "localTime": "2025-06-20T15:00",
+          "temperatureC": 16.9,
+          "relativeHumidity": 63,
+          "heatIndexF": 61.87
+        },
+        {
+          "localTime": "2025-06-21T15:00",
+          "temperatureC": 14.4,
+          "relativeHumidity": 92,
+          "heatIndexF": 57.83
+        },
+        {
+          "localTime": "2025-06-22T15:00",
+          "temperatureC": 17.9,
+          "relativeHumidity": 65,
+          "heatIndexF": 63.81
+        },
+        {
+          "localTime": "2025-06-23T15:00",
+          "temperatureC": 22.8,
+          "relativeHumidity": 52,
+          "heatIndexF": 72.76
+        },
+        {
+          "localTime": "2025-06-24T15:00",
+          "temperatureC": 24.2,
+          "relativeHumidity": 54,
+          "heatIndexF": 75.46
+        },
+        {
+          "localTime": "2025-06-25T15:00",
+          "temperatureC": 19.3,
+          "relativeHumidity": 61,
+          "heatIndexF": 66.36
+        },
+        {
+          "localTime": "2025-06-26T15:00",
+          "temperatureC": 18.0,
+          "relativeHumidity": 70,
+          "heatIndexF": 64.12
+        },
+        {
+          "localTime": "2025-06-27T15:00",
+          "temperatureC": 18.5,
+          "relativeHumidity": 65,
+          "heatIndexF": 64.94
+        },
+        {
+          "localTime": "2025-06-28T15:00",
+          "temperatureC": 20.8,
+          "relativeHumidity": 61,
+          "heatIndexF": 69.2
+        },
+        {
+          "localTime": "2025-06-29T15:00",
+          "temperatureC": 23.7,
+          "relativeHumidity": 51,
+          "heatIndexF": 74.44
+        },
+        {
+          "localTime": "2025-06-30T15:00",
+          "temperatureC": 27.2,
+          "relativeHumidity": 44,
+          "heatIndexF": 81.02
+        },
+        {
+          "localTime": "2025-07-01T15:00",
+          "temperatureC": 26.9,
+          "relativeHumidity": 45,
+          "heatIndexF": 80.68
+        },
+        {
+          "localTime": "2025-07-02T15:00",
+          "temperatureC": 23.1,
+          "relativeHumidity": 50,
+          "heatIndexF": 73.28
+        },
+        {
+          "localTime": "2025-07-03T15:00",
+          "temperatureC": 19.9,
+          "relativeHumidity": 54,
+          "heatIndexF": 67.33
+        },
+        {
+          "localTime": "2025-07-04T15:00",
+          "temperatureC": 21.8,
+          "relativeHumidity": 47,
+          "heatIndexF": 70.76
+        },
+        {
+          "localTime": "2025-07-05T15:00",
+          "temperatureC": 21.6,
+          "relativeHumidity": 51,
+          "heatIndexF": 70.47
+        },
+        {
+          "localTime": "2025-07-06T15:00",
+          "temperatureC": 24.1,
+          "relativeHumidity": 41,
+          "heatIndexF": 74.96
+        },
+        {
+          "localTime": "2025-07-07T15:00",
+          "temperatureC": 26.5,
+          "relativeHumidity": 42,
+          "heatIndexF": 79.52
+        },
+        {
+          "localTime": "2025-07-08T15:00",
+          "temperatureC": 28.4,
+          "relativeHumidity": 40,
+          "heatIndexF": 82.44
+        },
+        {
+          "localTime": "2025-07-09T15:00",
+          "temperatureC": 20.0,
+          "relativeHumidity": 75,
+          "heatIndexF": 68.01
+        },
+        {
+          "localTime": "2025-07-10T15:00",
+          "temperatureC": 19.5,
+          "relativeHumidity": 64,
+          "heatIndexF": 66.81
+        },
+        {
+          "localTime": "2025-07-11T15:00",
+          "temperatureC": 25.8,
+          "relativeHumidity": 45,
+          "heatIndexF": 78.27
+        },
+        {
+          "localTime": "2025-07-12T15:00",
+          "temperatureC": 26.0,
+          "relativeHumidity": 52,
+          "heatIndexF": 78.81
+        },
+        {
+          "localTime": "2025-07-13T15:00",
+          "temperatureC": 28.3,
+          "relativeHumidity": 46,
+          "heatIndexF": 83.15
+        },
+        {
+          "localTime": "2025-07-14T15:00",
+          "temperatureC": 22.4,
+          "relativeHumidity": 67,
+          "heatIndexF": 72.36
+        },
+        {
+          "localTime": "2025-07-15T15:00",
+          "temperatureC": 27.3,
+          "relativeHumidity": 44,
+          "heatIndexF": 81.17
+        },
+        {
+          "localTime": "2025-07-16T15:00",
+          "temperatureC": 30.6,
+          "relativeHumidity": 39,
+          "heatIndexF": 86.5
+        },
+        {
+          "localTime": "2025-07-17T15:00",
+          "temperatureC": 26.0,
+          "relativeHumidity": 50,
+          "heatIndexF": 78.77
+        },
+        {
+          "localTime": "2025-07-18T15:00",
+          "temperatureC": 20.8,
+          "relativeHumidity": 56,
+          "heatIndexF": 69.08
+        },
+        {
+          "localTime": "2025-07-19T15:00",
+          "temperatureC": 20.8,
+          "relativeHumidity": 53,
+          "heatIndexF": 69.01
+        }
+      ]
+    }
+  ]
+}

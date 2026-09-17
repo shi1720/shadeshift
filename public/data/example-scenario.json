@@ -1,0 +1,383 @@
+{
+  "modelVersion": "1.0.0",
+  "exportedAt": "2026-09-17T20:16:56.332Z",
+  "scenario": {
+    "name": "Houston · balanced arrival plan",
+    "budget": 75000,
+    "attendance": 22000,
+    "temperature": 94,
+    "humidity": 55,
+    "hour": 15,
+    "effectiveness": 100,
+    "residentMinimum": 25,
+    "eventDays": 12,
+    "legacyDays": 180,
+    "legacySunlight": 1,
+    "costOverrides": {},
+    "packages": {
+      "rail": "water",
+      "north": "queue",
+      "rideshare": "none",
+      "holly": "shade",
+      "fannin": "shade",
+      "west": "none"
+    },
+    "overrides": {
+      "rail": {
+        "visitors": 7200,
+        "walkMinutes": 12,
+        "queueMinutes": 8,
+        "shade": 0.1,
+        "residentShare": 0.35,
+        "dailyResidents": 450
+      },
+      "north": {
+        "visitors": 4200,
+        "walkMinutes": 9,
+        "queueMinutes": 14,
+        "shade": 0.08,
+        "residentShare": 0.15,
+        "dailyResidents": 180
+      },
+      "rideshare": {
+        "visitors": 3600,
+        "walkMinutes": 11,
+        "queueMinutes": 10,
+        "shade": 0.05,
+        "residentShare": 0.1,
+        "dailyResidents": 120
+      },
+      "holly": {
+        "visitors": 2200,
+        "walkMinutes": 10,
+        "queueMinutes": 5,
+        "shade": 0.16,
+        "residentShare": 0.8,
+        "dailyResidents": 850
+      },
+      "fannin": {
+        "visitors": 1800,
+        "walkMinutes": 18,
+        "queueMinutes": 4,
+        "shade": 0.12,
+        "residentShare": 0.7,
+        "dailyResidents": 620
+      },
+      "west": {
+        "visitors": 3000,
+        "walkMinutes": 8,
+        "queueMinutes": 12,
+        "shade": 0.06,
+        "residentShare": 0.25,
+        "dailyResidents": 300
+      }
+    }
+  },
+  "packageCatalog": {
+    "none": {
+      "name": "No intervention",
+      "cost": 0,
+      "shade": 0,
+      "queueReduction": 0,
+      "waterCapacity": 0,
+      "annualMaintenance": 0,
+      "description": "Retain the baseline."
+    },
+    "shade": {
+      "name": "Modular shade",
+      "cost": 18000,
+      "shade": 0.35,
+      "queueReduction": 0,
+      "waterCapacity": 0,
+      "annualMaintenance": 1800,
+      "description": "Reusable structures add 35 percentage points of effective route and queue shade."
+    },
+    "water": {
+      "name": "Shade + refill hub",
+      "cost": 26000,
+      "shade": 0.35,
+      "queueReduction": 0,
+      "waterCapacity": 1200,
+      "annualMaintenance": 3600,
+      "description": "Modular shade plus a refill point, up to 1,200 refills in the arrival window."
+    },
+    "queue": {
+      "name": "Queue operations",
+      "cost": 8000,
+      "shade": 0,
+      "queueReduction": 0.4,
+      "waterCapacity": 0,
+      "annualMaintenance": 0,
+      "description": "A staffed arrival plan reduces outdoor queue time by an assumed 40%. Event operating cost."
+    },
+    "complete": {
+      "name": "Complete cool link",
+      "cost": 34000,
+      "shade": 0.35,
+      "queueReduction": 0.4,
+      "waterCapacity": 1200,
+      "annualMaintenance": 3600,
+      "description": "Shade, a refill hub and queue operations. Component costs add without a bundle discount."
+    }
+  },
+  "sunlightProfile": {
+    "10": 0.7,
+    "11": 0.8,
+    "12": 0.9,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 0.9,
+    "17": 0.75,
+    "18": 0.55,
+    "19": 0.3,
+    "20": 0.05
+  },
+  "evidence": {
+    "heat": "H3AT 2020-08-07",
+    "weather": "ERA5 2025-06-01 to 2025-07-19",
+    "transit": "METRO August2026IVOMS_20260828"
+  },
+  "results": {
+    "rows": [
+      {
+        "id": "rail",
+        "name": "Stadium station arrival",
+        "short": "Stadium station",
+        "kind": "Transit connector",
+        "coordinates": [
+          [
+            29.685929,
+            -95.403341
+          ],
+          [
+            29.68595,
+            -95.406
+          ],
+          [
+            29.6842,
+            -95.4091
+          ]
+        ],
+        "visitors": 7200,
+        "walkMinutes": 12,
+        "queueMinutes": 8,
+        "shade": 0.1,
+        "residentShare": 0.35,
+        "dailyResidents": 450,
+        "note": "Origin: METRO GTFS stop 25003. Connector geometry and venue approach are illustrative; validate access with the venue.",
+        "base": 129600,
+        "after": 79200,
+        "saved": 50400,
+        "cost": 26000,
+        "coverage": 0.44999999999999996,
+        "water": 1200,
+        "residentInvestment": 9100,
+        "legacy": 340199.99999999994,
+        "maintenance": 3600,
+        "package": "water"
+      },
+      {
+        "id": "north",
+        "name": "North arrival & queue",
+        "short": "North arrival",
+        "kind": "Venue queue",
+        "coordinates": [
+          [
+            29.6909,
+            -95.4109
+          ],
+          [
+            29.6879,
+            -95.4107
+          ],
+          [
+            29.6861,
+            -95.4105
+          ]
+        ],
+        "visitors": 4200,
+        "walkMinutes": 9,
+        "queueMinutes": 14,
+        "shade": 0.08,
+        "residentShare": 0.15,
+        "dailyResidents": 180,
+        "note": "Candidate north approach, approximate geometry. Outdoor queue duration is a planning assumption.",
+        "base": 88872,
+        "after": 67233.6,
+        "saved": 21638.399999999994,
+        "cost": 8000,
+        "coverage": 0.08,
+        "water": 0,
+        "residentInvestment": 1200,
+        "legacy": 0,
+        "maintenance": 0,
+        "package": "queue"
+      },
+      {
+        "id": "rideshare",
+        "name": "Yellow Lot arrival",
+        "short": "Yellow Lot",
+        "kind": "Rideshare connector",
+        "coordinates": [
+          [
+            29.6795,
+            -95.4154
+          ],
+          [
+            29.6812,
+            -95.4142
+          ],
+          [
+            29.6823,
+            -95.4128
+          ]
+        ],
+        "visitors": 3600,
+        "walkMinutes": 11,
+        "queueMinutes": 10,
+        "shade": 0.05,
+        "residentShare": 0.1,
+        "dailyResidents": 120,
+        "note": "FIFA Houston transport identifies Yellow Lot for rideshare. Candidate connector is not an approved pedestrian route.",
+        "base": 71820,
+        "after": 71820,
+        "saved": 0,
+        "cost": 0,
+        "coverage": 0.05,
+        "water": 0,
+        "residentInvestment": 0,
+        "legacy": 0,
+        "maintenance": 0,
+        "package": "none"
+      },
+      {
+        "id": "holly",
+        "name": "Holly Hall neighborhood link",
+        "short": "Holly Hall",
+        "kind": "Community connector",
+        "coordinates": [
+          [
+            29.685342,
+            -95.39901
+          ],
+          [
+            29.68565,
+            -95.4015
+          ],
+          [
+            29.685929,
+            -95.403341
+          ]
+        ],
+        "visitors": 2200,
+        "walkMinutes": 10,
+        "queueMinutes": 5,
+        "shade": 0.16,
+        "residentShare": 0.8,
+        "dailyResidents": 850,
+        "note": "Origin: METRO GTFS stop 9236. Community share and footfall need field validation.",
+        "base": 27720,
+        "after": 16170,
+        "saved": 11550,
+        "cost": 18000,
+        "coverage": 0.51,
+        "water": 0,
+        "residentInvestment": 14400,
+        "legacy": 535500,
+        "maintenance": 1800,
+        "package": "shade"
+      },
+      {
+        "id": "fannin",
+        "name": "Fannin South approach",
+        "short": "Fannin South",
+        "kind": "Transit connector",
+        "coordinates": [
+          [
+            29.673589,
+            -95.402806
+          ],
+          [
+            29.6782,
+            -95.4032
+          ],
+          [
+            29.6823,
+            -95.4033
+          ]
+        ],
+        "visitors": 1800,
+        "walkMinutes": 18,
+        "queueMinutes": 4,
+        "shade": 0.12,
+        "residentShare": 0.7,
+        "dailyResidents": 620,
+        "note": "Origin: METRO GTFS Fannin South. This is a screening connector, not a routing recommendation; rail is also available.",
+        "base": 34848,
+        "after": 20988,
+        "saved": 13860,
+        "cost": 18000,
+        "coverage": 0.47,
+        "water": 0,
+        "residentInvestment": 12600,
+        "legacy": 703079.9999999999,
+        "maintenance": 1800,
+        "package": "shade"
+      },
+      {
+        "id": "west",
+        "name": "Kirby west approach",
+        "short": "Kirby approach",
+        "kind": "Street connector",
+        "coordinates": [
+          [
+            29.6842,
+            -95.4169
+          ],
+          [
+            29.6842,
+            -95.4148
+          ],
+          [
+            29.6845,
+            -95.413
+          ]
+        ],
+        "visitors": 3000,
+        "walkMinutes": 8,
+        "queueMinutes": 12,
+        "shade": 0.06,
+        "residentShare": 0.25,
+        "dailyResidents": 300,
+        "note": "Approximate west approach. Verify sidewalks, road crossings, perimeter and accessibility before deployment.",
+        "base": 56400,
+        "after": 56400,
+        "saved": 0,
+        "cost": 0,
+        "coverage": 0.06,
+        "water": 0,
+        "residentInvestment": 0,
+        "legacy": 0,
+        "maintenance": 0,
+        "package": "none"
+      }
+    ],
+    "base": 409260,
+    "after": 311811.6,
+    "saved": 97448.4,
+    "cost": 70000,
+    "reduction": 23.810878170356254,
+    "water": 1200,
+    "residentInvestment": 37300,
+    "residentPercent": 53.28571428571428,
+    "legacy": 1578780,
+    "maintenance": 7200,
+    "eventSavings": 1169380.7999999998,
+    "heatIndex": 106.33709784000018,
+    "annualCost": 171200,
+    "costPerHour": 43.099732781656755,
+    "budgetValid": true,
+    "equityValid": true
+  }
+}
