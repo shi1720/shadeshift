@@ -140,4 +140,6 @@ Software: MIT. Data and dependencies retain their own licenses. No affiliation o
 
 ## Demo video
 
+Watch the [public narrated demo](https://www.youtube.com/watch?v=Z0P42fXrd1Y), view the [submitted project](https://devpost.com/software/shadeshift), or download the [complete release](https://github.com/shi1720/shadeshift/releases/tag/v1.0.0).
+
 The narrated, captioned demo and its publication metadata are in [submission/video](submission/video). The final MP4 is distributed as a release asset to keep the source checkout small. Its screen recordings show the deployed application, with synthetic standard-voice narration.
