@@ -1,0 +1,7 @@
+{
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "instructions": "You are narrating a clear, personable product demo. Use a warm, natural, thoughtful conversational delivery, as if explaining your own work to one interested person across a table. Sound engaged and quietly confident, with gentle energy and varied intonation. Speak at a comfortable presentation pace around 150 words per minute. Use natural contractions as written. Pause briefly between paragraphs for visual scene changes. Let questions sound curious and the opening contrast land. Read numbers clearly, without over-enunciating every syllable. Avoid corporate announcer voice, sales hype, dramatic gravel, sing-song cadence, breathy ASMR, and uniform pauses. Pronounce ShadeShift as shade shift, JSON as jay-sun, CSV as C S V. Read only the supplied script, exactly; do not add introductions, fillers, or words. Maintain one consistent voice across the entire narration.",
+  "response_format": "wav",
+  "speed": 1.0
+}

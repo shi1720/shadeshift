@@ -23,8 +23,10 @@ Pricing hypothesis: $5,000 for an assisted two-event pilot, then $6,000 annually
 
 Data attribution: H3AT, CAPA Strategies, Houston Advanced Research Center, Harris County METRO, OpenStreetMap contributors, Open-Meteo and ECMWF ERA5/Copernicus. This independent project does not imply endorsement by FIFA, Rice or the data providers.
 
+Created by Shivam Gupta with AI-assisted development and review. Narration is AI-generated using the standard OpenAI Cedar voice. This revised cut uses conversational narration and synchronized English captions.
+
 #ShadeShift #RiceWorldCupHack #UrbanSustainability
 
-## Published video
+## Revised video
 
-https://www.youtube.com/watch?v=Z0P42fXrd1Y
+https://www.youtube.com/watch?v=LQK32lzqW64

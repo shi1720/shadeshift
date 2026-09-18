@@ -8,15 +8,15 @@
 - `Devpost-Gallery.png`: 1200×800 gallery image.
 - `verification.json`: media stream properties from ffprobe.
 
-The application scenes use the actual deployed application at https://shadeshift-city.web.app through Playwright. The video demonstrates real optimization, sensitivity, atlas selection, the sign-in modal and a JSON download. It does not stage a successful account save. The other scenes use the project's real pitch slides. The narration uses the standard macOS Samantha synthetic voice, without cloning or impersonation.
+The application scenes use the actual deployed application at https://shadeshift-city.web.app through Playwright. The video demonstrates real optimization, sensitivity, atlas selection, the sign-in modal and a JSON download. It does not stage a successful account save. The other scenes use the project's real pitch slides. The revised narration uses OpenAI gpt-4o-mini-tts with the built-in Cedar voice. It is a single conversational take, without cloning or impersonation. Its 56 phrase-level captions were aligned to word timestamps. The public description discloses the synthetic voice.
 
 The video compares initial deployment spend. The optimizer does not constrain a full annual operating budget. At 12 event windows, modeled first-year program costs are $171,200 for the starting plan and $251,400 for the optimized plan. The primary figures are scenario calculations, not measured physical outcomes. Caption wording deliberately distinguishes historical observations, planning assumptions and modeled results.
 
 ## Reproduction
 
-1. Run `python3 scripts/record-demo.py prepare` on macOS with Samantha installed.
-2. Run `DEMO_BASE_URL=https://shadeshift-city.web.app node scripts/record-demo.mjs`.
-3. Run `python3 scripts/record-demo.py compose` with FFmpeg installed.
-4. Run `node scripts/record-demo.gallery.mjs` for fresh thumbnail and gallery images.
+1. To capture fresh source scenes, run `python3 scripts/record-demo.py prepare`, then `DEMO_BASE_URL=https://shadeshift-city.web.app node scripts/record-demo.mjs`. The legacy macOS voice provides scratch timing only.
+2. Set `OPENAI_API_KEY` locally, then run `python3 scripts/prepare-natural-narration.py`. This uses `voice-settings.json` and the current script. Credentials are not stored in the repository.
+3. Check the generated speech against the script. Run `python3 scripts/compose-natural-demo.py` to retime the existing real UI takes and render phrase-level captions, AAC audio, and an English subtitle track.
+4. Inspect the full decoded video, a representative frame from every scene, subtitle timing, audio levels, and the final YouTube playback before replacing the submission link.
 
-The scripts write raw audio/video captures and the timing manifest into `/tmp/shadeshift-video-build`. The title, pricing and closing slide renders are included in `submission/video/slides`, so recording does not depend on external presentation paths. Raw intermediate captures remain separate from the repository. To redo selected scenes after a UI change, set `DEMO_SCENES=4,5,8` using zero-based cue IDs, then compose again.
+Requirements: Python with requests and Pillow, FFmpeg, and the project Node dependencies. The renderer accepts `--font` for an alternative installed TrueType font. Raw captures remain in `/tmp/shadeshift-video-build`; revised audio, timing and editing intermediates remain in `/tmp/shadeshift-voice-v2`. The old `record-demo.py compose` is the original system-voice workflow, not the revised render.

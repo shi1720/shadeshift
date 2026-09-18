@@ -1,12 +1,13 @@
-# Media verification
+# Revised media verification
 
-Final duration: 170.90 seconds.
-Resolution: 1920×1080.
+Duration: 147.47 seconds.
+Resolution: 1920 x 1080.
 Streams: H.264 video, AAC narration, English mov_text subtitles.
-Visible captions are also rendered into the video.
-Size: 21.18 MB.
-SHA-256: a2552a8c617f3d7f6879431004fcb95e7bbf30226041ee30ffd2ea36c9ba9b0c
+Size: 19.84 MB.
+SHA-256: ef9453cc326e748b6a4204fe2a40645ec6313456b814c91548b3e76a11ceb7cf
 
-All 14 scenes use the supplied script. Real application scenes were captured at https://shadeshift-city.web.app. Browser page errors: zero. A real JSON export downloaded successfully and contained model 1.0.0 and baseline 409,260 person-minutes.
+Narration: OpenAI gpt-4o-mini-tts, built-in Cedar voice, one continuous conversational take. No voice cloning or identity imitation. Speech is explicitly disclosed as synthetic. A separate gpt-4o-transcribe pass confirmed the numerical claims and pricing; whisper-1 word timestamps were used to align 56 phrase-level captions to the exact written script.
 
-The complete video decoded without errors. A representative frame from every scene was visually inspected. Three takes were re-recorded after the application replaced an em dash placeholder with n/a. Every revised frame was inspected again. Narration audio is non-silent, with measured pre-encoding mean level -16.3 dB and peak -1.2 dB. No voice cloning or identity imitation.
+The actual deployed-app footage from the first demonstration was retimed to the new narration. All 14 scenes were visually inspected in the revised render. The full MP4 decoded without errors. Encoded narration measured -17.3 dB mean and -1.5 dB peak. The caption band preserves the application view.
+
+The recording shows genuine optimization, sensitivity changes, city selection, sign-in UI and JSON export. It does not stage a successful account save. Numerical outcomes remain scenario calculations, not measured field outcomes or medical claims. Annual cost and service tradeoffs are now stated in the narration.

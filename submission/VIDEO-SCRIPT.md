@@ -1,53 +1,59 @@
-# ShadeShift: three-minute demo
+# ShadeShift demo: exact narration
 
-Read the following narration verbatim. The companion silent walkthrough follows the sequence below. A natural pace is roughly 135 words per minute. Leave brief pauses at scene changes. Do not introduce your name in a double-blind judging video unless organizers explicitly allow it.
+This is the script for the revised 2:27 demonstration. The voice is AI-generated using OpenAI Cedar; it does not imitate a real person. Scene labels are not spoken.
 
-## Voiceover
+## 01. Opening title
 
-The ticket gets you a seat. It does not get you shade.
+The ticket gets you a seat. It doesn't get you shade. Think about the walk from the station, or the queue outside the gate. That's where ShadeShift begins.
 
-Imagine arriving in Houston for a major event. You leave the train, walk toward the stadium, and join a queue. Your destination may be indoors, but the journey still includes time outside.
+## 02. Houston studio and budget
 
-Now imagine you run that event. You have a limited budget. Where should shade, queue improvements and water access go?
+For a venue operator, the question is practical: where should a limited budget go? ShadeShift turns a heat map into a funded plan you can explain.
 
-ShadeShift turns that question into a plan you can explain.
+## 03. Historical heat map
 
-We built it for Track Three, using the twenty twenty-six World Cup as a case for future events. Houston is our detailed pilot. The other ten U.S. host markets provide a consistent historical weather comparison.
+Let's start in Houston. These six candidate routes sit alongside six hundred and fifty-four historical air-temperature observations, collected in August twenty twenty.
 
-Start with the Houston map. These dots are real street-temperature observations from August twenty twenty. The transit anchors come from official METRO data. The candidate connectors are approximate and clearly labeled.
+## 04. Evidence and method
 
-Visitor counts, walking and waiting times, existing shade, intervention effects and costs are editable assumptions. Before deployment, an operator replaces them with field measurements and supplier quotes.
+Here's the distinction that matters. The temperature readings are evidence. Visitor numbers, queue times, shade and costs are assumptions. They're visible, and operators can replace them with measurements.
 
-Here is a seventy-five-thousand-dollar budget with a twenty-five-percent community allocation requirement. The starting plan spends seventy thousand dollars and models about twenty-four percent less direct-sun exposure.
+## 05. Starting plan
 
-I pin that plan, then optimize. The engine checks the finite catalog of possible allocations. At the same spend, this portfolio models about thirty-one percent less exposure.
+Our budget is seventy-five thousand dollars. This starting plan spends seventy thousand, and estimates about twenty-four percent less time in direct sun.
 
-But look at the tradeoff. Refill capacity falls to zero, and the community allocation is lower. A water station is a separate service need. Our model does not pretend drinking water removes sunlight, and the optimizer does not replace the operator’s judgment.
+## 06. Click Optimize investment
 
-Now I lower delivered effectiveness. At sixty percent, the same portfolio models about nineteen percent less exposure. This is an assumption test, not a confidence interval or a prediction of avoided illness.
+Now, let's optimize. We check every feasible combination in this small catalog. For the same initial spend, the modeled reduction rises to thirty-one point two five percent.
 
-Every plan can be exported with its assumptions and model version, or saved privately for the next event.
+## 07. Results and baseline comparison
 
-The legacy view asks what happens after the crowd leaves. It separates resident reuse from event timing and includes maintenance and recurring operations allowances.
+That's almost a hundred and twenty-eight thousand person-minutes avoided in one arrival window. We're accounting for time in direct sun. We're not claiming to predict illnesses prevented.
 
-Our first buyer is a venue operations team. We propose a five-thousand-dollar assisted pilot and a six-thousand-dollar annual subscription as prices to validate. The pilot checks the sites, measures planning effort and tests repeat use.
+## 08. Refill and community tradeoff
 
-Heat maps and weather alerts already exist. ShadeShift makes the next decision concrete: where to put a limited budget, what changes, and what still needs verification.
+And there's a tradeoff. Refill capacity drops to zero, less investment reaches community-weighted locations, and annual operating costs rise. The operator can reject this plan. The comparison makes that decision visible.
 
-## Recording and editing
+## 09. Effectiveness sensitivity
 
-The prepared walkthrough is silent. Add your own narration; do not imply that synthesized speech is yours. Trim or extend pauses to match your delivery. Suggested output: H.264 MP4 at 1920×1080, readable screen content, no background music needed. Check all claims against the shipped app before uploading.
+What if the interventions underperform? At sixty percent effectiveness, the reduction falls to eighteen point seven five percent. You can test the assumptions before committing money.
 
-| Approximate time | Screen |
-|---|---|
-| 0:00–0:25 | Studio overview and problem |
-| 0:25–0:45 | Host city atlas, return to Houston |
-| 0:45–1:05 | Map and historical evidence |
-| 1:05–1:20 | Corridor assumptions and cost |
-| 1:20–1:40 | Pin starting plan, optimize, show metrics |
-| 1:40–2:00 | Refill and community tradeoff, comparison |
-| 2:00–2:20 | Effectiveness sensitivity, export menu |
-| 2:20–2:45 | Legacy and recurring costs |
-| 2:45–3:05 | Commercial hypothesis, then studio closing |
+## 10. Host city atlas
 
-Use the timing as an editing guide, not a mandated contest video length. No verified official duration requirement was found. If the submission form specifies a limit, shorten the opening and commercial paragraph first.
+The atlas adds historical weather context for all eleven U.S. host locations, using a consistent sample. It's a comparison of past conditions, not a weather forecast.
+
+## 11. Sign-in, save, export
+
+Anyone can explore the app. Sign in to save private plans, or export your scenario as JSON or CSV so someone else can review the same assumptions.
+
+## 12. Legacy and delivery
+
+The plan also looks beyond match day. Who will use the shade afterward? Who maintains it? A two-event pilot would check the sites and measure what actually works.
+
+## 13. Business slide
+
+We'd start with venue operators: a five-thousand-dollar pilot, then a six-thousand-dollar annual subscription. That's a pricing hypothesis to test. Equipment and installation are separate.
+
+## 14. Closing URL
+
+One venue partner. Two events. A plan we can test and improve. ShadeShift helps make the walk to the gate part of a better event, and a lasting benefit for residents.
